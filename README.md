@@ -23,7 +23,7 @@ Complete the following steps to take part in the challenge:
 1. Open a pull request to the base repository. This will automatically trigger the execution of the tests via a [GitHub action](/.github/workflows/wdi5-tests.yml).
 1. Copy the URL of your pull request and paste it into the [SAP Community Coffee Corner Thread]().
 
-As this challenge focuses on test-driven development and the wdi5 testing framework, there are no requirements in terms of what your application has to looks like or its content, as long as it passes the tests. Feel free to get creative.
+As this challenge focuses on test-driven development and the wdi5 testing framework, there are no requirements in terms of what your application has to looks like or its content, as long as it passes the tests. Feel free to get creative and build the application you always wanted to build, but don't edit the tests 😉
 
 ## Requirements
 Node.js version 14.x or 16.x ([https://nodejs.org/en/download/](https://nodejs.org/en/download/)).
