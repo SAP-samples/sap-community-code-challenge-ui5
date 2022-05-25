@@ -1,33 +1,38 @@
-# SAP-samples/repository-template
-This default template for SAP Samples repositories includes files for README, LICENSE, and .reuse/dep5. All repositories on github.com/SAP-samples will be created based on this template.
-
-# Containing Files
-
-1. The LICENSE file:
-In most cases, the license for SAP sample projects is `Apache 2.0`.
-
-2. The .reuse/dep5 file: 
-The [Reuse Tool](https://reuse.software/) must be used for your samples project. You can find the .reuse/dep5 in the project initial. Please replace the parts inside the single angle quotation marks < > by the specific information for your repository.
-
-3. The README.md file (this file):
-Please edit this file as it is the primary description file for your project. You can find some placeholder titles for sections below.
-
-# [Title]
-<!-- Please include descriptive title -->
-
-<!--- Register repository https://api.reuse.software/register, then add REUSE badge:
+# SAP Community Code Challenge - UI5
+<!--- Register repository https://api.reuse.software/register, then add REUSE badge:-->
 [![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/REPO-NAME)](https://api.reuse.software/info/github.com/SAP-samples/REPO-NAME)
--->
+[![Visits Badge](https://badges.pufler.dev/visits/SAP-samples/sap-community-code-challenge-ui5)](https://badges.pufler.dev)
+[![Updated Badge](https://badges.pufler.dev/updated/SAP-samples/sap-community-code-challenge-ui5)](https://badges.pufler.dev)
+
+[![Contributors Display](https://badges.pufler.dev/contributors/SAP-samples/sap-community-code-challenge?size=50&padding=5&bots=false)](https://badges.pufler.dev)
+
+The [change log](/CHANGELOG.md) describes notable changes in this package.
 
 ## Description
-<!-- Please include SEO-friendly description -->
+This repository is the starting point for the SAP Community Code Challenge for UI5 (see [SAP Community Coffee Corner Thread]() and corresponding [blog post]()). The repository contains an empty OpenUI5 project and a series of [end-to-end tests](/webapp/test/e2e/) written with [wdi5](https://js-soft.github.io/wdi5/#/). In order to take part in the challenge it is your job to develop the OpenUI5 app and make the tests pass (following the process of [test-driven development](https://en.wikipedia.org/wiki/Test-driven_development)). The purpose of the challenge is to get familiar with the **wdi5**, which will be [UI5's official end-to-end testing framework](https://blogs.sap.com/2022/02/12/the-king-is-dead-long-live-the-king-wdi5-as-uiveri5-successor/) in the future.
+
+## Participation
+Complete the following steps to take part in the challenge:
+
+1. Fork this repository.
+1. Clone the forked repository into your development environment.
+1. Execute `npm install` to install the project's dependencies.
+1. Execute `npm start` to start the web server.
+1. Develop the OpenUI5 app to make the [tests](/webapp/test/e2e/) pass (execute `npm run test` to run the tests locally during development).
+1. Once the tests pass, push your changes to your forked repository on GitHub.
+1. Open a pull request to the base repository. This will automatically trigger the execution of the tests via a [GitHub action](/.github/workflows/test.yml).
+1. Copy the URL of your pull request and paste it into the [SAP Community Coffee Corner Thread]().
+
+As this challenge focuses on test-driven development and the wdi5 testing framework, there are no requirements in terms of what your application has to looks like or its content, as long as it passes the tests. Feel free to get creative.
 
 ## Requirements
+Node.js version 12.x, 14.x, or 16.x [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
 
 ## Download and Installation
+See [Participation](#participation)
 
 ## Known Issues
-<!-- You may simply state "No known issues. -->
+No known issues.
 
 ## How to obtain support
 [Create an issue](https://github.com/SAP-samples/<repository-name>/issues) in this repository if you find a bug or have questions about the content.
@@ -38,4 +43,4 @@ For additional support, [ask a question in SAP Community](https://answers.sap.co
 If you wish to contribute code, offer fixes or improvements, please send a pull request. Due to legal reasons, contributors will be asked to accept a DCO when they create the first pull request to this project. This happens in an automated fashion during the submission process. SAP uses [the standard DCO text of the Linux Foundation](https://developercertificate.org/).
 
 ## License
-Copyright (c) 2022 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSE) file.
+Copyright (c) 2022 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](/LICENSES/Apache-2.0.txt) file.

@@ -1,0 +1,34 @@
+name: run wdi5 tests
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16]
+
+    steps:
+      - name: check out repo
+        uses: actions/checkout@v3
+
+      - name: setup chrome
+        uses: browser-actions/setup-chrome@v0.0.0
+
+      - name: use node ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "npm"
+          cache-dependency-path: "**/package-lock.json"
+
+      - name: install packages
+        run: npm ci
+
+      - name: run wdi5 tests
+        run: npm run ci-test

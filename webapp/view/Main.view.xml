@@ -1,0 +1,14 @@
+<mvc:View
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m">
+    <Page>
+        <Title text="{i18n>mainTitleText}" />
+        <Button press=".onSelect" id="mainButton" text="click me" />
+        <List id="myList">
+            <StandardListItem title="hi" />
+            <StandardListItem title="hi" />
+            <StandardListItem title="hi" />
+        </List>
+    </Page>
+</mvc:View>
