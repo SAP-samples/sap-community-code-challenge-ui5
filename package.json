@@ -1,8 +1,7 @@
 {
   "name": "ui5-challenge",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "SAP Community Code Challenge: This repository contains an empty OpenUI5 application and end-to-end test written with wdi5. Take part in the challenge and develop an app that passes the tests.",
   "scripts": {
     "start": "ui5 serve --port 8080",
     "test": "wdio run wdio.conf.js",
@@ -11,15 +10,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nicogeburek/wdi5-test.git"
+    "url": "git+https://github.com/SAP-samples/sap-community-code-challenge-ui5.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "sap",
+    "sap-community",
+    "code-challenge",
+    "OpenUI5",
+    "wdi5"
+  ],
+  "author": "https://github.com/nicogeburek",
+  "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/nicogeburek/wdi5-test/issues"
+    "url": "https://github.com/SAP-samples/sap-community-code-challenge-ui5/issues"
   },
-  "homepage": "https://github.com/nicogeburek/ui5-test#readme",
+  "homepage": "https://github.com/SAP-samples/sap-community-code-challenge-ui5#readme",
   "devDependencies": {
     "@ui5/cli": "^2.14.1",
     "@wdio/cli": "^7.19.7",

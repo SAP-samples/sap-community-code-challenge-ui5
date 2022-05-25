@@ -1,6 +1,6 @@
 # SAP Community Code Challenge - UI5
 <!--- Register repository https://api.reuse.software/register, then add REUSE badge:-->
-[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/REPO-NAME)](https://api.reuse.software/info/github.com/SAP-samples/REPO-NAME)
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/sap-community-code-challenge-ui5)](https://api.reuse.software/info/github.com/SAP-samples/sap-community-code-challenge-ui5)
 [![Visits Badge](https://badges.pufler.dev/visits/SAP-samples/sap-community-code-challenge-ui5)](https://badges.pufler.dev)
 [![Updated Badge](https://badges.pufler.dev/updated/SAP-samples/sap-community-code-challenge-ui5)](https://badges.pufler.dev)
 
@@ -20,13 +20,13 @@ Complete the following steps to take part in the challenge:
 1. Execute `npm start` to start the web server.
 1. Develop the OpenUI5 app to make the [tests](/webapp/test/e2e/) pass (execute `npm run test` to run the tests locally during development).
 1. Once the tests pass, push your changes to your forked repository on GitHub.
-1. Open a pull request to the base repository. This will automatically trigger the execution of the tests via a [GitHub action](/.github/workflows/test.yml).
+1. Open a pull request to the base repository. This will automatically trigger the execution of the tests via a [GitHub action](/.github/workflows/wdi5-tests.yml).
 1. Copy the URL of your pull request and paste it into the [SAP Community Coffee Corner Thread]().
 
 As this challenge focuses on test-driven development and the wdi5 testing framework, there are no requirements in terms of what your application has to looks like or its content, as long as it passes the tests. Feel free to get creative.
 
 ## Requirements
-Node.js version 12.x, 14.x, or 16.x )[https://nodejs.org/en/download/](https://nodejs.org/en/download/)).
+Node.js version 14.x or 16.x ([https://nodejs.org/en/download/](https://nodejs.org/en/download/)).
 
 ## Download and Installation
 See [Participation](#participation).
