@@ -1,6 +1,5 @@
 name: run wdi5 tests
 on:
-    push:
     pull_request:
         branches: [main]
 
