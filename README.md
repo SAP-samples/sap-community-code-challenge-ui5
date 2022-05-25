@@ -4,7 +4,7 @@
 [![Visits Badge](https://badges.pufler.dev/visits/SAP-samples/sap-community-code-challenge-ui5)](https://badges.pufler.dev)
 [![Updated Badge](https://badges.pufler.dev/updated/SAP-samples/sap-community-code-challenge-ui5)](https://badges.pufler.dev)
 
-[![Contributors Display](https://badges.pufler.dev/contributors/SAP-samples/sap-community-code-challenge?size=50&padding=5&bots=false)](https://badges.pufler.dev)
+[![Contributors Display](https://badges.pufler.dev/contributors/SAP-samples/sap-community-code-challenge-ui5?size=50&padding=5&bots=false)](https://badges.pufler.dev)
 
 The [change log](/CHANGELOG.md) describes notable changes in this package.
 
@@ -26,10 +26,10 @@ Complete the following steps to take part in the challenge:
 As this challenge focuses on test-driven development and the wdi5 testing framework, there are no requirements in terms of what your application has to looks like or its content, as long as it passes the tests. Feel free to get creative.
 
 ## Requirements
-Node.js version 12.x, 14.x, or 16.x [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
+Node.js version 12.x, 14.x, or 16.x )[https://nodejs.org/en/download/](https://nodejs.org/en/download/)).
 
 ## Download and Installation
-See [Participation](#participation)
+See [Participation](#participation).
 
 ## Known Issues
 No known issues.
