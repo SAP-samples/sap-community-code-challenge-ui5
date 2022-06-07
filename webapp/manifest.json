@@ -9,6 +9,22 @@
     "title": "{{appTitle}}",
     "description": "{{appDescription}}"
   },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
   "sap.ui5": {
     "dependencies": {
       "minUI5Version": "1.60.0",
