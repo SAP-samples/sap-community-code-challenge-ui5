@@ -5,9 +5,22 @@
     "type": "application",
     "applicationVersion": {
       "version": "0.0.1"
-    }
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}"
   },
   "sap.ui5": {
+    "dependencies": {
+      "minUI5Version": "1.60.0",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
     "routing": {
       "config": {
         "routerClass": "sap.m.routing.Router",
