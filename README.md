@@ -18,7 +18,7 @@ Complete the following steps to take part in the challenge:
 1. Clone the forked repository into your development environment.
 1. Execute `npm install` to install the project's dependencies.
 1. Execute `npm start` to start the web server.
-1. Read through the [tests](/webapp/test/e2e/) and try to understand what they test for. What kind of pages and controls do they expect?
+1. Read the [tests](/webapp/test/e2e/) and try to understand what they test for. What kind of pages and controls do they expect?
 1. Develop the OpenUI5 app to make the tests pass (execute `npm run test` to run the tests locally during development).
 1. Once the tests pass, push your changes to your forked repository on GitHub.
 1. Open a pull request to the base repository. This will automatically trigger the execution of the tests via a [GitHub action](/.github/workflows/wdi5-tests.yml).
