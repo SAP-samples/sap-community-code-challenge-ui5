@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "SAP Community Code Challenge: This repository contains an empty OpenUI5 application and end-to-end test written with wdi5. Take part in the challenge and develop an app that passes the tests.",
   "scripts": {
-    "start": "ui5 serve --port 8080",
+    "start": "ui5 serve --port 8080 -o index.html",
     "test": "wdio run wdio.conf.js",
     "ci-test": "run-p -r start wait-then-test",
     "wait-then-test": "wait-on tcp:8080 && npm run test -- --headless"
@@ -36,6 +36,12 @@
     "rimraf": "^3.0.2",
     "wait-on": "^6.0.1",
     "wdio-chromedriver-service": "^7.3.2",
-    "wdio-ui5-service": "^0.9.0"
+    "wdio-ui5-service": "^0.9.0",
+    "ui5-middleware-livereload": "^0.5.11"
+  },
+  "ui5": {
+    "dependencies": [
+      "ui5-middleware-livereload"
+    ]
   }
 }
