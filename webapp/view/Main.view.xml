@@ -1,0 +1,33 @@
+<mvc:View
+    controllerName="ui5.challenge.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m" >
+        <Page title="{i18n>title}" titleAlignment="Center">
+            <List >
+                <StandardListItem
+                    title="Capture"
+                    description="Capture a New Round"
+                    icon="sap-icon://record"
+                    type="Navigation" />
+                <StandardListItem
+                    title="Analyze"
+                    description="Analyze your Rounds"
+                    icon="sap-icon://business-objects-experience"
+                    type="Navigation" />
+                <StandardListItem
+                    title="Profile"
+                    description="Change Your Profile &amp; Settings"
+                    icon="sap-icon://key-user-settings"
+                    type="Navigation" />
+            </List>
+            <HBox
+                class="sapUiSmallMarginTop"
+                justifyContent="Center">
+                <Button
+                    id="mainButton"
+                    text="Give Feedback"
+                    press=".onFeedback" />
+            </HBox>
+        </Page>
+</mvc:View>
