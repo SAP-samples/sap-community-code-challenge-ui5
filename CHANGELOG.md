@@ -6,8 +6,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 ## [Unreleased]
 
-<!-- ## [1.0.0] - 2022-02-01
+## [1.0.0] - 2022-06-08
 
 ### Added
 
-- Initial release -->
+- Initial release
