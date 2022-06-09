@@ -1,0 +1,10 @@
+<mvc:View
+  controllerName="ui5.challenge.controller.Main"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m">
+    <List items="{list>/}">
+    <StandardListItem
+			title="{list>value}"/>
+    </List>
+    <Button id="mainButton" text="Button"/>
+</mvc:View>
