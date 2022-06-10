@@ -46,7 +46,7 @@
         "controlAggregation": "pages",
         "controlId": "app",
         "clearControlAggregation": false
-      },
+      },  
       "routes": [
         {
           "name": "default",
