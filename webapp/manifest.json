@@ -3,6 +3,7 @@
   "sap.app": {
     "id": "ui5.challenge",
     "type": "application",
+    "i18n": "i18n/i18n.properties",
     "applicationVersion": {
       "version": "0.0.1"
     },
@@ -47,8 +48,24 @@
         "controlId": "app",
         "clearControlAggregation": false
       },
-      "routes": [],
-      "targets": {}
+      "routes": [
+        {
+          "pattern": "",
+          "name": "RouteMain",
+          "target": [
+            "TargetMain"
+          ]
+        }
+      ],
+      "targets": {
+        "TargetMain": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewName": "Main",
+          "viewId": "main"
+        }
+      }
     },
     "rootView": {
       "viewName": "ui5.challenge.view.App",

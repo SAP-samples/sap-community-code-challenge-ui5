@@ -1,0 +1,38 @@
+<mvc:View
+	controllerName="ui5.challenge.controller.Main"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:c="sap.ui.core"
+	displayBlock="true"
+	height="100%"
+	busyIndicatorDelay="0"
+>
+    <Page id="page" title="{i18n>appTitle}">
+		<headerContent>
+			<Button id="mainButton" text="Press me" press=".onButtonPress" />
+		</headerContent>
+        <content>
+			<List
+				id="productsList"
+				headerText="{i18n>list.headerText}"
+				items="{
+					path: '/ProductCollection',
+					length: 5
+				}"
+			>
+				<StandardListItem
+					description="{ProductId}"
+					icon="{ProductPicUrl}"
+					iconDensityAware="false"
+					iconInset="false"
+					title="{Name}"
+				/>
+			</List>
+        </content>
+		<!-- <footer>
+			<OverflowToolbar>
+				<Button id="mainButton" text="Press me" press=".onButtonPress" />
+			</OverflowToolbar>
+		</footer> -->
+    </Page>
+</mvc:View>
