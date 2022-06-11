@@ -51,10 +51,10 @@
       "targets": {}
     },
     "rootView": {
-      "viewName": "ui5.challenge.view.App",
+      "viewName": "ui5.challenge.view.Main",
       "type": "XML",
       "async": true,
-      "id": "app"
+      "id": "shell"
     },
     "models": {
       "i18n": {

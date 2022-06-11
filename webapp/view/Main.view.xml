@@ -1,0 +1,31 @@
+<mvc:View controllerName="ui5.challenge.controller.MainController" displayBlock="true"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page title="{i18n>mainPageTitle}">
+                    <content>
+
+                        <Panel width="auto" title="Button Controller" class="sapUiSmallMargin">
+                            <content>
+                                <Button id="mainButton" text="{i18n>mainButtonText}" press=".onPress" />
+                            </content>
+                        </Panel>
+
+                        <Panel width="auto" title="List Information" class="sapUiSmallMargin">
+                            <content>
+                                <List headerText="{i18n>listEmployees}" items="{
+                                    path: '/Employees'
+                                }">
+                                    <StandardListItem title="{Name}" description="{Surname}" counter="{Age}"/>
+                                </List>
+                            </content>
+                        </Panel>
+
+                    </content>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>
