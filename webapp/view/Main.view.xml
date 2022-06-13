@@ -1,0 +1,16 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" controllerName="ui5.challenge.controller.Main">
+    <Page id="Main" title="{i18n>appTitle}">
+        <List headerText="Products" items="{/Items}">
+            <items>
+                <StandardListItem title="{Title}" description="{Description}" icon="{Icon}" />
+            </items>
+        </List>
+        <footer>
+            <OverflowToolbar>
+                <ToolbarSpacer/>
+                <Button id="mainButton" type="Emphasized" text="{i18n>mainButton}"/>
+            </OverflowToolbar>
+        </footer>
+    </Page>
+</mvc:View>
