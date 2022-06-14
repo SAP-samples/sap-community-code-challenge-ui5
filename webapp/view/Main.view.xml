@@ -1,0 +1,20 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+			<Page>
+				<content>
+					<Button id="mainButton" text='Do not click'/>
+						<List
+							headerText="Ducks">
+						<StandardListItem
+			title="Riri"/>
+			   <StandardListItem
+				   title="Fifi"/>
+				      <StandardListItem
+					      title="Loulou"/>
+					         <StandardListItem
+							 title="Donald"/>
+							    <StandardListItem
+                        title="Picsou"/>
+	</List>
+				</content>
+			</Page>	
+</mvc:View>
