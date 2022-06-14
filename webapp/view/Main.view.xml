@@ -1,0 +1,14 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+    <VBox>
+        <Button id="mainButton" text="{data>/buttonText}" />
+        <List
+            items="{
+                path: 'data>/items'
+            }" >
+            <StandardListItem
+                title="{data>title}"
+                counter="{data>counter}"
+            />
+        </List>
+    </VBox>
+</mvc:View>
