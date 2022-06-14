@@ -1,0 +1,27 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns = "sap.m" controllerName="ui5.challenge.controller.Main" displayBlock="true">
+<Page title="{i18n>title}">
+<headerContent>
+
+<Button  text="Week 1" id="mainButton"/>
+<Button  text="Week 2"/>
+<Button  text="Week 3"/>
+<Button  text="Week 4"/>
+
+</headerContent>
+ <content>
+ <List>
+ <items>
+ <StandardListItem 
+ title="Item 1"
+ />
+ <StandardListItem 
+ title="Item 2"
+ />
+ <StandardListItem 
+ title="Item 3"
+ />
+ </items>
+ </List>
+ </content>
+</Page>
+</mvc:View>

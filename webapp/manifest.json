@@ -47,8 +47,21 @@
         "controlId": "app",
         "clearControlAggregation": false
       },
-      "routes": [],
-      "targets": {}
+      "routes": [
+        {
+          "name": "Main",
+          "pattern": "",
+          "target":"Main-Target"
+        }],
+      "targets": {
+        "Main-Target":{
+          "viewType": "XML",
+          "viewId": "Main",
+          "viewName": "Main",
+          "transition":"slide",
+          "clearControlAggregation": false
+        }
+      }
     },
     "rootView": {
       "viewName": "ui5.challenge.view.App",
