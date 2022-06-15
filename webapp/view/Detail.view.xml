@@ -1,0 +1,17 @@
+<mvc:View
+	controllerName="ui5.challenge.controller.Detail"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:c="sap.ui.core"
+	displayBlock="true"
+	height="100%"
+	busyIndicatorDelay="0"
+>
+    <MessagePage 
+        icon="sap-icon://in-progress"
+        text="Should be implemented soon."
+        description="Try again in one week."
+        showHeader="false"
+    />
+
+</mvc:View>

@@ -17,7 +17,17 @@ sap.ui.define([
         },
 
         onButtonPress: function (oEvent) {
-            alert("Pressed");
+            alert("Will be implemented soon ...");
+        },
+
+        onMyControlPress: function (oEvent) {
+            var oList = this.getView().byId("productsList");
+            var oSelectedItem = oList.getSelectedItem();
+            if (!oSelectedItem) {
+                oSelectedItem = oList.getItems()[0];
+            }
+
+            this.getRouter().navTo("RouteDetail", { "ProductID": oSelectedItem.getBindingContext().getProperty("/ProductID") });
         }
     });
 });

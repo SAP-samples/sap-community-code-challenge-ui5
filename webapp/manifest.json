@@ -55,6 +55,13 @@
           "target": [
             "TargetMain"
           ]
+        },
+        {
+          "pattern": "RouteDetail",
+          "name": "RouteDetail",
+          "target": [
+            "TargetDetail"
+          ]
         }
       ],
       "targets": {
@@ -64,6 +71,13 @@
           "clearControlAggregation": false,
           "viewName": "Main",
           "viewId": "main"
+        },
+        "TargetDetail": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewName": "Detail",
+          "viewId": "Detail"
         }
       }
     },

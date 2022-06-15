@@ -9,17 +9,25 @@
 >
     <Page id="page" title="{i18n>appTitle}">
 		<headerContent>
-			<Button id="mainButton" text="Press me" press=".onButtonPress" />
+			<Button id="mainButton" press=".onButtonPress" icon="sap-icon://action" type="Transparent" text="Share" />
 		</headerContent>
         <content>
 			<List
 				id="productsList"
-				headerText="{i18n>list.headerText}"
 				items="{
 					path: '/ProductCollection',
 					length: 5
 				}"
+				mode="SingleSelect"
 			>
+			<headerToolbar>
+				<Toolbar >
+					<Title text="{i18n>mainTitleText}" level="H5" />
+					<ToolbarSpacer />
+					<Button id="myControl" text="{i18n>myControl}" press=".onMyControlPress" type="Emphasized"/>
+				</Toolbar>
+			</headerToolbar>
+			<items>
 				<StandardListItem
 					description="{ProductId}"
 					icon="{ProductPicUrl}"
@@ -27,6 +35,7 @@
 					iconInset="false"
 					title="{Name}"
 				/>
+				</items>
 			</List>
         </content>
 		<!-- <footer>
