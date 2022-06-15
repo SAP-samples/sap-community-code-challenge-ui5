@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 ## [Unreleased]
 
+## [1.0.1] - 2022-06-14
+
+### Changed
+
+- Disable cache and run standard `npm install` instead of `npm clean-install` in the GitHub action (automated testing).
+
 ## [1.0.0] - 2022-06-08
 
 ### Added
