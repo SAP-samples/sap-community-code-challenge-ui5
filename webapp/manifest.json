@@ -58,6 +58,11 @@
           "name": "Main",
           "pattern": "",
           "target": ["Main"]
+        },
+        {
+          "name": "RouteDetail",
+          "pattern": "RouteDetail",
+          "target": ["Detail"]
         }
       ],
       "targets": {
@@ -66,6 +71,12 @@
           "transition": "slide",
           "clearControlAggregation": false,
           "viewName": "Main"
+        },
+        "Detail": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewName": "Detail"
         }
       }
     },
