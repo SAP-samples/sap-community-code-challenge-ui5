@@ -3,7 +3,8 @@
     xmlns:mvc="sap.ui.core.mvc"
     displayBlock="true"
     xmlns="sap.m" >
-        <Page title="{i18n>title}" titleAlignment="Center">
+        <Page titleAlignment="Center">
+            <Title text="{i18n>mainTitleText}" />
             <List >
                 <StandardListItem
                     title="Capture"
@@ -11,10 +12,12 @@
                     icon="sap-icon://record"
                     type="Navigation" />
                 <StandardListItem
-                    title="Analyze"
+                    title="Detail"
                     description="Analyze your Rounds"
                     icon="sap-icon://business-objects-experience"
-                    type="Navigation" />
+                    type="Navigation"
+                    id="myControl"
+                    press=".onNav" />
                 <StandardListItem
                     title="Profile"
                     description="Change Your Profile &amp; Settings"
