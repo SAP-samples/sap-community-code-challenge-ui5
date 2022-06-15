@@ -4,5 +4,8 @@ sap.ui.define([
     "use strict";
 
     return BaseController.extend("ui5.challenge.controller.Main", {
+        onNavigate: function () {
+            this.getRouter().navTo('detail')
+        }
     });
 });

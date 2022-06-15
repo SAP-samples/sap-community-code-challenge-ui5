@@ -1,6 +1,8 @@
-<mvc:View xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+<mvc:View xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" controllerName="ui5.challenge.controller.Main">
     <VBox>
+        <Title id="title" text="{i18n>mainTitleText}" />
         <Button id="mainButton" text="{data>/buttonText}" />
+        <Button id="myControl" text="🔍" press="onNavigate" />
         <List
             items="{
                 path: 'data>/items'
