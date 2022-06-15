@@ -2,9 +2,13 @@
   controllerName="ui5.challenge.controller.Main"
   xmlns:mvc="sap.ui.core.mvc"
   xmlns="sap.m">
+<Title text="{i18n>mainTitleText}"></Title>
 <Button id="mainButton" text="Hello" />
+<Button id="myControl" press=".navToDetail" text="Navigate to Detail" />
 <List items="{data>/}">
     <StandardListItem
-			title="{data>name}"/>
+			title="{data>name}"
+      type="Navigation"
+      press=".navToDetail"/>
 </List>
 </mvc:View>

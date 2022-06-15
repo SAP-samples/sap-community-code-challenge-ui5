@@ -58,6 +58,11 @@
           "name": "default",
           "pattern": "",
           "target": "MainView"
+        },
+        {
+          "name": "Detail",
+          "pattern": "RouteDetail",
+          "target": "DetailView"
         }
       ],
       "targets": {
@@ -67,6 +72,13 @@
           "viewLevel": 1,
           "viewId": "Main",
           "viewName": "Main"
+        },
+        "DetailView": {
+          "viewType": "XML",
+          "transition": "slide",
+          "viewLevel": 1,
+          "viewId": "Detail",
+          "viewName": "Detail"
         }
       }
     },
