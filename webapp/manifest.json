@@ -40,15 +40,38 @@
     "routing": {
       "config": {
         "routerClass": "sap.m.routing.Router",
+        "type": "View",
         "viewType": "XML",
         "async": true,
-        "viewPath": "ui5.challenge.view",
+        "path": "ui5.challenge.view",
         "controlAggregation": "pages",
         "controlId": "app",
         "clearControlAggregation": false
       },
-      "routes": [],
-      "targets": {}
+      "routes": [
+        {
+          "pattern": "",
+          "name": "Main",
+          "target": "main"
+        },
+        {
+          "pattern": "RouteDetail",
+          "name": "Detail",
+          "target": "detail"          
+        }
+      ],
+      "targets": {
+        "main": {
+          "id": "main",
+          "name": "Main",
+          "level": 1
+        },
+        "detail": {
+          "id": "detail",
+          "name": "Detail",
+          "level": 2
+        }        
+      }
     },
     "rootView": {
       "viewName": "ui5.challenge.view.App",
@@ -62,6 +85,10 @@
         "settings": {
           "bundleName": "ui5.challenge.i18n.i18n"
         }
+      },
+      "": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "model/items.json"
       }
     }
   }

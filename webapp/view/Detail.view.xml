@@ -1,0 +1,4 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controller="sap.ui5.challenge.controller.MainController">
+    <Page title="{i18n>detailPageTitle}">
+    </Page>
+</mvc:View>
