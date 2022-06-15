@@ -23,11 +23,11 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-          cache: "npm"
-          cache-dependency-path: "**/package-lock.json"
+          # cache: "npm"
+          # cache-dependency-path: "**/package-lock.json"
 
       - name: install packages
-        run: npm ci
+        run: npm install
 
       - name: run wdi5 tests
         run: npm run ci-test
