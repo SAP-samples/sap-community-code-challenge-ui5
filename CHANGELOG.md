@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 ## [Unreleased]
 
+## [1.1.0] - 2022-06-15
+
+### Added
+
+- New test file for week 2 of the challenge.
+
 ## [1.0.1] - 2022-06-14
 
 ### Changed
