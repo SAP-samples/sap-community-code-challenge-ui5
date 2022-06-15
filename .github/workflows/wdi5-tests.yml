@@ -27,7 +27,7 @@ jobs:
           # cache-dependency-path: "**/package-lock.json"
 
       - name: install packages
-        run: npm ci
+        run: npm install
 
       - name: run wdi5 tests
         run: npm run ci-test
