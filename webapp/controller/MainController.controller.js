@@ -10,18 +10,23 @@ sap.ui.define([
             // This is used for Dynamically change title
             // document.title = 'ui5-challenge';
 
+            console.log(this.getView().byId('titleId'));
+
             var oDummyData = {
                 Employees: [{
-                    Name: "Name1",
-                    Surname: "Surname1",
+                    Id: 1,
+                    Name: "Betty",
+                    Surname: "Buzzell",
                     Age: 26
                 }, {
-                    Name: "Name2",
-                    Surname: "Surname2",
+                    Id: 2,
+                    Name: "Donna",
+                    Surname: "Rosen",
                     Age: 23
                 }, {
-                    Name: "Name3",
-                    Surname: "Surname3",
+                    Id: 3,
+                    Name: "Craig",
+                    Surname: "Reid",
                     Age: 32
                 }]
             };
@@ -31,8 +36,15 @@ sap.ui.define([
 
         },
 
-        onPress: function () {
-            MessageToast.show("You pressed the Button!");
+        onTestBtnPress: function (oEvent) {
+            console.log(oEvent);
+            MessageToast.show("You pressed the Test Button!");
+        },
+
+
+        onNextPagePress: function () {
+            this.navTo("RouteDetailView");
         }
+
     });
 });

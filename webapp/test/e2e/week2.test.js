@@ -1,4 +1,6 @@
-const { wdi5 } = require("wdio-ui5-service")
+const {
+    wdi5
+} = require("wdio-ui5-service")
 const Main = require("./pageObjects/Main")
 
 describe("week2: main page", () => {
@@ -27,7 +29,7 @@ describe("week2: main page", () => {
             selector: {
                 id: "myControl",
                 viewName: Main._viewName
-              }
+            }
         })
         await control.firePress()
         const url = await browser.getUrl()

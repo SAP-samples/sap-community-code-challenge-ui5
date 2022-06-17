@@ -47,14 +47,35 @@
         "controlId": "app",
         "clearControlAggregation": false
       },
-      "routes": [],
-      "targets": {}
+      "routes": [{
+          "pattern": "",
+          "name": "RouteMainView",
+          "target": ["MainView"]
+        },
+        {
+          "pattern": "RouteDetail",
+          "name": "RouteDetailView",
+          "target": ["DetailView"]
+        }
+      ],
+      "targets": {
+        "MainView": {
+          "viewId": "Main",
+          "viewName": "Main",
+          "viewLevel": 1
+        },
+        "DetailView": {
+          "viewId": "Detail",
+          "viewName": "Detail",
+          "viewLevel": 2
+        }
+      }
     },
     "rootView": {
-      "viewName": "ui5.challenge.view.Main",
+      "viewName": "ui5.challenge.view.App",
       "type": "XML",
       "async": true,
-      "id": "shell"
+      "id": "app"
     },
     "models": {
       "i18n": {
