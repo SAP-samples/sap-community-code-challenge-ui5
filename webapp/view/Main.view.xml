@@ -7,7 +7,9 @@
     <StandardListItem
 			title="{list>value}"
        press="firePress"/>
+       <!-- Week 2 -->
     </List>
     <Button id="mainButton" text="Button"/>
+    <!-- Week 2 -->
     <Button id="myControl" text="Button" press="firePress"/>
 </mvc:View>
