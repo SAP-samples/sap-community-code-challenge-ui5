@@ -1,7 +1,7 @@
 const { wdi5 } = require("wdio-ui5-service")
 const Main = require("./pageObjects/Main")
 
-describe("main page", () => {
+describe("week1: main page", () => {
     before(async () => {
         await Main.open()
     })

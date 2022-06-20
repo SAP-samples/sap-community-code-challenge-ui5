@@ -2,9 +2,12 @@
   controllerName="ui5.challenge.controller.Main"
   xmlns:mvc="sap.ui.core.mvc"
   xmlns="sap.m">
+  <Title level="H3" text="{i18n>mainTitleText}" />
     <List items="{list>/}">
     <StandardListItem
-			title="{list>value}"/>
+			title="{list>value}"
+       press="firePress"/>
     </List>
     <Button id="mainButton" text="Button"/>
+    <Button id="myControl" text="Button" press="firePress"/>
 </mvc:View>
