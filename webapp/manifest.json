@@ -52,12 +52,22 @@
           "name": "default",
           "pattern": "",
           "target": "Main"
+        },
+        {
+          "name": "detail",
+          "pattern": "RouteDetail",
+          "target": "detail"
         }
       ],
       "targets": {
         "Main": {
           "viewId": "Main",
           "viewName": "Main"
+        },
+        "detail": {
+          "viewName": "detail",
+          "viewId": "Detail",
+          "viewLevel": 2
         }
       }
     },
