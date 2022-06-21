@@ -1,5 +1,7 @@
-<mvc:View xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+<mvc:View xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" controllerName="ui5.challenge.controller.MainController">
+    <Title id="title" text="{i18n>mainTitleText}" />
     <Button text="Foo" id="mainButton" />
+    <Button text="Details" id="myControl" press=".onPress"/>
     <List >
         <StandardListItem title="1" />
         <StandardListItem title="2" />
