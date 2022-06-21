@@ -12,6 +12,18 @@ sap.ui.define([
         },
         onPress: function () {
 
-        }
+        },
+        onNavBack: function () {
+			var oHistory, sPreviousHash;
+
+			oHistory = History.getInstance();
+			sPreviousHash = oHistory.getPreviousHash();
+
+			if (sPreviousHash !== undefined) {
+				window.history.go(-1);
+			} else {
+				this.getRouter().navTo("main", {}, true /*no history*/);
+			}
+		}
     });
 });

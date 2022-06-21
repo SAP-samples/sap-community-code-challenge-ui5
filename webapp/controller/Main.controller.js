@@ -51,8 +51,16 @@ sap.ui.define([
 			}
 
 			oModel.setProperty("/todos", aTodos);
+			var oRouter = this.getOwnerComponent().getRouter();
+			oRouter.navTo("detail");
 		},
-
+		/**
+		 * Clears the ToDo Add input field.
+		 */
+		 clearHeader: function() {
+			var oInput = this.getView().byId("addTodoItemInput");
+			oInput.setValue("");
+		},
 		/**
 		 * Updates the number of items not yet completed
 		 */
@@ -89,7 +97,9 @@ sap.ui.define([
 
 			this._applyListFilters();
 		},
-
+		onToDOPress: function(oEvent){
+			this.getRouter().navTo("employeeList");
+		},
 		onFilter: function(oEvent) {
 			// First reset current filters
 			this.aTabFilters = [];

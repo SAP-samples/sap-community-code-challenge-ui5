@@ -10,20 +10,28 @@
 			<customHeader>
 				<f:ShellBar
 						core:require="{ Helper: 'ui5/challenge/util/Helper' }"
-						title="{i18n>TITLE}"
+						title="{i18n>mainTitleText}"
+
 						homeIcon="{:= Helper.resolvePath('./img/logo_ui5.png') }" />
 			</customHeader>
 			<content>
 				<f:DynamicPage>
 					<f:header>
 						<f:DynamicPageHeader pinnable="false">
+							<HBox >
 							<Input
 									class="todoInput"
 									id="addTodoItemInput"
 									value="{/newTodo}"
 									placeholder="{i18n>INPUT_PLACEHOLDER}"
-									change=".addTodo" />
-						</f:DynamicPageHeader>
+									submit=".addTodo" />
+							<Button
+									id="mainButton"
+									text="Clear"
+									icon="sap-icon://sys-cancel"
+									press=".clearHeader" />
+							</HBox>
+							</f:DynamicPageHeader>
 					</f:header>
 					<f:content>
 
@@ -57,7 +65,7 @@
 										</items>
 									</SegmentedButton>
 									<Button
-                                            id="mainButton"
+                                            id="myControl"
 											enabled="{/itemsRemovable}"
 											icon="sap-icon://delete"
 											text="{i18n>CLEAR_COMPLETED}"

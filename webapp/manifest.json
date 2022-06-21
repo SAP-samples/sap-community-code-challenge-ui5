@@ -54,6 +54,11 @@
           "target": [
             "main"
           ]
+        },
+        {
+          "name": "detail",
+          "pattern": "RouteDetail",
+          "target": "toDoDetails"
         }
       ],
       "targets": {
@@ -61,7 +66,17 @@
           "viewName": "Main",
           "viewId": "main",
           "viewLevel": 1
-        }
+        },
+        "toDoDetails": {
+          "viewName": "Detail",
+          "viewId": "Detail",
+          "viewLevel": 2
+				},
+        "notFound": {
+					"id": "notFound",
+					"name": "NotFound",
+					"transition": "show"
+				}
       }
     },
     "rootView": {
