@@ -19,6 +19,10 @@ sap.ui.define([
                 }]
             }
             this.getView().setModel(new JSONModel(model), "viewModel")
+        },
+
+        onGoToDetail: function () {
+            this.navTo("Detail", undefined, undefined)
         }
         
     });

@@ -1,12 +1,7 @@
 {
   "name": "ui5-challenge",
-<<<<<<< HEAD
-  "version": "1.0.0",
-  "description": "SAP Community Code Challenge: This repository contains an empty OpenUI5 application and end-to-end tests written with wdi5. Take part in the challenge and develop an app that passes the tests.",
-=======
   "version": "1.1.0",
   "description": "SAP Community Code Challenge: This repository contains an empty OpenUI5 application and end-to-end test written with wdi5. Take part in the challenge and develop an app that passes the tests.",
->>>>>>> 5d968b58fc1709c1d8c859ed5acf3034bb0f7151
   "scripts": {
     "start": "ui5 serve --port 8080",
     "test": "wdio run wdio.conf.js",

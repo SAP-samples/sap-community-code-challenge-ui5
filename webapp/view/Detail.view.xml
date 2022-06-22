@@ -1,0 +1,7 @@
+<mvc:View 
+    controllerName="ui5.challenge.controller.Detail"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+    <VBox>
+        <Title text="{i18n>detailTitleText}"/>     
+    </VBox>
+</mvc:View>
