@@ -1,4 +1,5 @@
-<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controller="sap.ui5.challenge.controller.MainController">
-    <Page title="{i18n>detailPageTitle}">
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="ui5.challenge.controller.DetailController">
+    <Page title="{i18n>detailPageTitle}" showNavButton="true" navButtonPress=".onNavBack">
+        <Button id="dialogButton" text="{i18n>dialogButton}" press=".onPress" />
     </Page>
 </mvc:View>

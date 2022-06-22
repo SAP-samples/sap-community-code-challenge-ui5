@@ -1,7 +1,8 @@
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
-    "sap/ui/core/UIComponent"
-], function (Controller, UIComponent) {
+    "sap/ui/core/UIComponent",
+    "sap/ui/core/routing/History"
+], function (Controller, UIComponent, History) {
     "use strict";
 
     return Controller.extend("ui5.challenge.controller.BaseController", {
@@ -11,8 +12,16 @@ sap.ui.define([
         getRouter: function () {
             return UIComponent.getRouterFor(this);
         },
-        onPress: function () {
+        onNavBack: function () {
+            var oHistory = History.getInstance();
+            var sPreviousHash = oHistory.getPreviousHash();
 
+            if (sPreviousHash !== undefined) {
+                window.history.go(-1);
+            } else {
+                var oRouter = this.getOwnerComponent().getRouter();
+                oRouter.navTo("Main", {}, true);
+            }
         }
     });
 });
