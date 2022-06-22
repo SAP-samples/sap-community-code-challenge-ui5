@@ -1,6 +1,32 @@
 <mvc:View
-  controllerName="ui5.challenge.controller.Detail"
-  xmlns:mvc="sap.ui.core.mvc"
-  xmlns="sap.m">
-  <Button press="onNavigateToMain" text="Back"></Button>
+    controllerName="ui5.challenge.controller.Detail"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:f="sap.f"
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m">
+
+
+  <Page>
+    <customHeader>
+      <f:ShellBar
+          core:require="{ Helper: 'ui5/challenge/util/Helper' }"
+          title="{i18n>detailTitleText}"
+          homeIcon="{:= Helper.resolvePath('./img/logo_ui5.png') }">
+       
+      </f:ShellBar>
+    </customHeader>
+    <content>      <Button
+      id="navButton"
+      press="onNavigateToMain"
+      text="Back"></Button>
+
+      <Button
+      id="dialogButton"
+			text="Dialog"
+			press=".onDetailDialogPress"
+			class="sapUiSmallMarginBottom"
+			ariaHasPopup="Dialog" />
+
+</content>
+  </Page>
 </mvc:View> 
