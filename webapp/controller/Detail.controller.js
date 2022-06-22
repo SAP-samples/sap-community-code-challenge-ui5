@@ -6,6 +6,21 @@ sap.ui.define([
 
     return BaseController.extend("ui5.challenge.controller.Detail", {
         onInit: function () {
+        },
+
+        onOpenDialog: function () {
+            this.loadFragment("Dialog", this, undefined)
+            .then(oDialog => {
+                oDialog.open()
+            })
+        },
+
+        onCloseDialog: function () {
+            this.getFragment("Dialog").close()
+        },
+
+        onBack: function () {
+            this.onNavBack()
         }
         
     });

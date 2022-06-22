@@ -3,5 +3,11 @@
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
     <VBox>
         <Title text="{i18n>detailTitleText}"/>     
+        <OverflowToolbar
+        >
+            <Button id="navButton" text="{i18n>navBack}" press="onBack"/>
+            <Button id="dialogButton" text="{i18n>dialogButton}" press="onOpenDialog"/>             
+        </OverflowToolbar>
+       
     </VBox>
 </mvc:View>
