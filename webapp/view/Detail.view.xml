@@ -1,5 +1,7 @@
 <mvc:View xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" controllerName="ui5.challenge.controller.Detail">
     <VBox>
         <Title id="title" text="{i18n>detailTitleText}" />
+        <Button id="navButton" text="🔙" />
+        <Button id="dialogButton" text="🗔" press="onDialog" />
     </VBox>
 </mvc:View>
