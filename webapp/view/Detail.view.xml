@@ -1,6 +1,10 @@
 <mvc:View
-  controllerName="ui5.challenge.controller.Main"
+  controllerName="ui5.challenge.controller.Detail"
   xmlns:mvc="sap.ui.core.mvc"
   xmlns="sap.m">
-<Title text="{i18n>detailTitleText}"></Title>
+  <Page showNavButton="true">
+    <Title text="{i18n>detailTitleText}"></Title>
+    <Button id="dialogButton" text="openDialog" press="openDialog"></Button>
+  </Page>
+
 </mvc:View>
