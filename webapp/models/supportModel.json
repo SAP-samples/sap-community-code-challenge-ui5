@@ -1,0 +1,373 @@
+{
+    "selectedItem": false,
+    "items": [{
+            "Year": "2019",
+            "Product1": "5980",
+            "Product2": "4590",
+            "Product3": "2543"
+        },
+        {
+            "Year": "2020",
+            "Product1": "3430",
+            "Product2": "8120",
+            "Product3": "3410"
+        },
+        {
+            "Year": "2021",
+            "Product1": "2535",
+            "Product2": "5815",
+            "Product3": "2315"
+        }
+    ],
+    "Country": {
+        "USA": [
+            "Chicago",
+            "Austin"
+        ],
+        "Belarus": [
+            "Minsk",
+            "Brest"
+        ]
+    },
+    "Stores": [{
+            "Name": "Ullrich - Gaylord",
+            "Country": "USA",
+            "City": "Chicago",
+            "Email": "Jamal.Wehner14@gmail.com",
+            "PhoneNumber": "375 (29) 1234567",
+            "id": "12",
+            "regDate": "28.06.2014",
+            "Products": [{
+                    "name": "milk",
+                    "prewPrice": 2,
+                    "price": "1",
+                    "description": "lorem lorem lorem",
+                    "count": 3,
+                    "status": "ok",
+                    "id": "121",
+                    "rating": 4
+                },
+                {
+                    "name": "coffee",
+                    "prewPrice": 2,
+                    "price": "3",
+                    "description": "lorem lorem lorem",
+                    "count": 25,
+                    "status": "out",
+                    "id": "122",
+                    "rating": 2
+                },
+                {
+                    "name": "bread",
+                    "prewPrice": 2,
+                    "price": "0.3",
+                    "description": "lorem lorem lorem",
+                    "count": 140,
+                    "status": "ok",
+                    "id": "123",
+                    "rating": 5
+                },
+                {
+                    "name": "tea",
+                    "prewPrice": 2,
+                    "price": "2",
+                    "description": "lorem lorem lorem",
+                    "count": 17,
+                    "status": "storage",
+                    "id": "124",
+                    "rating": 1
+                }
+            ]
+        },
+        {
+            "Name": "Windler Inc",
+            "Country": "USA",
+            "City": "Chicago",
+            "Email": "Pearl.Kautzer71@yahoo.com",
+            "PhoneNumber": "375 (29) 1234567",
+            "id": "2",
+            "regDate": "7.06.2021",
+            "Products": [{
+                    "name": "milk",
+                    "prewPrice": 2,
+                    "price": "1",
+                    "description": "lorem lorem lorem",
+                    "count": 3,
+                    "status": "ok",
+                    "id": "25",
+                    "rating": 4
+                },
+                {
+                    "name": "coffee",
+                    "prewPrice": 2,
+                    "price": "3",
+                    "description": "lorem lorem lorem",
+                    "count": 25,
+                    "status": "out",
+                    "id": "26",
+                    "rating": 2
+                }
+            ]
+        },
+        {
+            "Name": "Kshlerin, Gulgowski and Johns",
+            "Country": "USA",
+            "City": "Austin",
+            "Email": "Granville51@hotmail.com",
+            "PhoneNumber": "375 (29) 2222222",
+            "id": "3",
+            "regDate": "4.06.2010",
+            "Products": [{
+                    "name": "milk",
+                    "prewPrice": 2,
+                    "price": "1",
+                    "description": "lorem lorem lorem",
+                    "count": 3,
+                    "status": "ok",
+                    "id": "37",
+                    "rating": 4
+                },
+                {
+                    "name": "coffee",
+                    "prewPrice": 2,
+                    "price": "3",
+                    "description": "lorem lorem lorem",
+                    "count": 25,
+                    "status": "out",
+                    "id": "38",
+                    "rating": 2
+                }
+            ]
+        },
+        {
+            "Name": "Stark - Hammes",
+            "Country": "USA",
+            "City": "Austin",
+            "Email": "Leann_Hudson@yahoo.com",
+            "PhoneNumber": "375 (29) 8590462",
+            "id": "4",
+            "regDate": "1.06.2013",
+            "Products": [{
+                    "name": "milk",
+                    "prewPrice": 2,
+                    "price": "1",
+                    "description": "lorem lorem lorem",
+                    "count": 3,
+                    "status": "ok",
+                    "id": "49",
+                    "rating": 4
+                },
+                {
+                    "name": "coffee",
+                    "prewPrice": 2,
+                    "price": "3",
+                    "description": "lorem lorem lorem",
+                    "count": 25,
+                    "status": "out",
+                    "id": "410",
+                    "rating": 2
+                }
+            ]
+        },
+        {
+            "Name": "Morar - Kilback",
+            "Country": "Belarus",
+            "City": "Minsk",
+            "Email": "Fletcher_Walker31@yahoo.com",
+            "PhoneNumber": "375 (29) 1234567",
+            "id": "5",
+            "regDate": "2.06.2019",
+            "Products": [{
+                    "name": "milk",
+                    "prewPrice": 2,
+                    "price": "1",
+                    "description": "lorem lorem lorem",
+                    "count": 3,
+                    "status": "ok",
+                    "id": "511",
+                    "rating": 4
+                },
+                {
+                    "name": "coffee",
+                    "prewPrice": 2,
+                    "price": "3",
+                    "description": "lorem lorem lorem",
+                    "count": 25,
+                    "status": "out",
+                    "id": "512",
+                    "rating": 2
+                }
+            ]
+        },
+        {
+            "Name": "Little Group",
+            "Country": "Belarus",
+            "City": "Minsk",
+            "Email": "Julio53@hotmail.com",
+            "PhoneNumber": "375 (29) 1234567",
+            "id": "6",
+            "regDate": "6.06.2002",
+            "Products": [{
+                    "name": "milk",
+                    "prewPrice": 2,
+                    "price": "1",
+                    "description": "lorem lorem lorem",
+                    "count": 3,
+                    "status": "ok",
+                    "id": "613",
+                    "rating": 4
+                },
+                {
+                    "name": "coffee",
+                    "prewPrice": 2,
+                    "price": "3",
+                    "description": "lorem lorem lorem",
+                    "count": 25,
+                    "status": "out",
+                    "id": "614",
+                    "rating": 2
+                }
+            ]
+        },
+        {
+            "Name": "Rempel and Sons",
+            "Country": "Belarus",
+            "City": "Minsk",
+            "Email": "Charley_Monahan98@gmail.com",
+            "PhoneNumber": "375 (29) 1234567",
+            "id": "7",
+            "regDate": "1.06.2001",
+            "Products": [{
+                    "name": "milk",
+                    "prewPrice": 2,
+                    "price": "1",
+                    "description": "lorem lorem lorem",
+                    "count": 3,
+                    "status": "ok",
+                    "id": "715",
+                    "rating": 4
+                },
+                {
+                    "name": "coffee",
+                    "prewPrice": 2,
+                    "price": "3",
+                    "description": "lorem lorem lorem",
+                    "count": 25,
+                    "status": "out",
+                    "id": "716",
+                    "rating": 2
+                }
+            ]
+        },
+        {
+            "Name": "Donnelly, Hickle and King",
+            "Country": "Belarus",
+            "City": "Minsk",
+            "Email": "Jackson7@hotmail.com",
+            "PhoneNumber": "375 (29) 7654321",
+            "id": "8",
+            "regDate": "3.06.2017",
+            "Products": [{
+                    "name": "milk",
+                    "prewPrice": 2,
+                    "price": "1",
+                    "description": "lorem lorem lorem",
+                    "count": 3,
+                    "status": "ok",
+                    "id": "817",
+                    "rating": 4
+                },
+                {
+                    "name": "coffee",
+                    "prewPrice": 2,
+                    "price": "3",
+                    "description": "lorem lorem lorem",
+                    "count": 25,
+                    "status": "out",
+                    "id": "818",
+                    "rating": 2
+                },
+                {
+                    "name": "bread",
+                    "prewPrice": 2,
+                    "price": "0.3",
+                    "description": "lorem lorem lorem",
+                    "count": 140,
+                    "status": "ok",
+                    "id": "819",
+                    "rating": 5
+                },
+                {
+                    "name": "tea",
+                    "prewPrice": 2,
+                    "price": "2",
+                    "description": "lorem lorem lorem",
+                    "count": 17,
+                    "status": "storage",
+                    "id": "820",
+                    "rating": 1
+                }
+            ]
+        },
+        {
+            "Name": "Jakubowski, Moore and Aufderhar",
+            "Country": "Belarus",
+            "City": "Brest",
+            "Email": "Clyde_Purdy@hotmail.com",
+            "PhoneNumber": "375 (29) 1234567",
+            "id": "9",
+            "regDate": "4.06.2020",
+            "Products": [{
+                    "name": "milk",
+                    "prewPrice": 2,
+                    "price": "1",
+                    "description": "lorem lorem lorem",
+                    "count": 3,
+                    "status": "ok",
+                    "id": "921",
+                    "rating": 4
+                },
+                {
+                    "name": "coffee",
+                    "prewPrice": 2,
+                    "price": "3",
+                    "description": "lorem lorem lorem",
+                    "count": 25,
+                    "status": "out",
+                    "id": "922",
+                    "rating": 2
+                }
+            ]
+        },
+        {
+            "Name": "Harvey LLC",
+            "Country": "Belarus",
+            "City": "Brest",
+            "Email": "Melody97@yahoo.com",
+            "PhoneNumber": "375 (29) 1234567",
+            "id": "10",
+            "regDate": "2.06.2009",
+            "Products": [{
+                    "name": "milk",
+                    "prewPrice": 2,
+                    "price": "1",
+                    "description": "lorem lorem lorem",
+                    "count": 3,
+                    "status": "ok",
+                    "id": "1023",
+                    "rating": 4
+                },
+                {
+                    "name": "coffee",
+                    "prewPrice": 2,
+                    "price": "3",
+                    "description": "lorem lorem lorem",
+                    "count": 25,
+                    "status": "out",
+                    "id": "1024",
+                    "rating": 2
+                }
+            ]
+        }
+    ]
+}
