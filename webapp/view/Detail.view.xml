@@ -9,9 +9,21 @@
 >
     <MessagePage 
         icon="sap-icon://in-progress"
-        text="Should be implemented soon."
-        description="Try again in one week."
-        showHeader="false"
-    />
+        text="Should be implemented soon"
+        description=""
+		showNavButton="true"
+		navButtonPress=".onNavButtonPress"
+    >
+		<buttons>
+			<Button
+				id="dialogButton"
+				enabled="true"
+				text="{i18n>Detail.dialogButton.text}"
+				textDirection="Inherit"
+				type="Emphasized"
+				press=".onDialogButtonPress"
+			/>
+		</buttons>
+	</MessagePage>
 
 </mvc:View>

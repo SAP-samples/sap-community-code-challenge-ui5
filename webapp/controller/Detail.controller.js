@@ -1,10 +1,30 @@
 sap.ui.define([
-    "sap/ui/core/mvc/Controller"
+    "ui5/challenge/controller/BaseController",
+    "sap/ui/core/routing/History",
+    "sap/m/MessageBox"
 ], function (
-    Controller
+    BaseController,
+    History,
+    MessageBox
 ) {
     "use strict";
 
-    return Controller.extend("ui5.challenge.controller.Detail", {
+    return BaseController.extend("ui5.challenge.controller.Detail", {
+        onNavButtonPress: function (oEvent) {
+            var oHistory = History.getInstance();
+            var sPreviousHash = oHistory.getPreviousHash();
+
+            if (sPreviousHash !== undefined) {
+                window.history.go(-1);
+            } else {
+                this.getRouter().navTo("RouteMain");
+            }
+        },
+
+        onDialogButtonPress: function () {
+            MessageBox.information(this.getResourceBundle().getText("Detail.messageBox.text"), {
+                id: "myDialog"
+            });
+        }
     });
 });
