@@ -1,3 +1,5 @@
-<mvc:View xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+<mvc:View xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" controllerName="ui5.challenge.controller.DetailController">
+<Button text="Back" id="backnavButton" />
+<Button text="Open Dialog" id="dialogButton" press="showDialog" />
 Detail
 </mvc:View>
