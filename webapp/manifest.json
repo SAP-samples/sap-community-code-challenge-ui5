@@ -54,9 +54,9 @@
           "target": "Main"
         },
         {
-          "name": "detail",
+          "name": "Detail",
           "pattern": "RouteDetail",
-          "target": "detail"
+          "target": "Detail"
         }
       ],
       "targets": {
@@ -64,10 +64,9 @@
           "viewId": "Main",
           "viewName": "Main"
         },
-        "detail": {
-          "viewName": "detail",
+        "Detail": {
           "viewId": "Detail",
-          "viewLevel": 2
+          "viewName": "Detail"
         }
       }
     },
