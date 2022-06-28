@@ -6,6 +6,8 @@
         <content>
             <Label text="Welcome to details Page" />
 
+            <Button id="dialogButton" text="Open Dialog" press=".onOpenDialog" class="sapUiSmallMarginBottom" ariaHasPopup="Dialog" />
+
         </content>
     </Page>
 </mvc:View>
