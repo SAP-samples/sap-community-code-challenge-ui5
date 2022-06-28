@@ -1,0 +1,39 @@
+<mvc:View
+	controllerName="ui5.challenge.controller.Main"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:c="sap.ui.core"
+	displayBlock="true"
+	height="100%"
+	busyIndicatorDelay="0"
+>
+<Page
+    title="{i18n>mainTitleText}"
+>
+    <content>
+        <Button
+            id="mainButton"
+            text="MainButton"
+        >
+        </Button>
+        <List>
+            <items>
+                <StandardListItem
+                    title="item1"
+                    type="Navigation"
+                    press=".onItem1Press"
+                    id="myControl"
+                />
+                <StandardListItem
+                    title="item2"
+                />
+                <StandardListItem
+                    title="item3"
+                />
+            </items>
+        </List>
+
+    </content>
+
+</Page>
+</mvc:View>
