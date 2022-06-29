@@ -1,4 +1,6 @@
-const { wdi5 } = require("wdio-ui5-service")
+const {
+    wdi5
+} = require("wdio-ui5-service")
 const Main = require("./pageObjects/Main")
 
 describe("week1: main page", () => {
@@ -16,7 +18,7 @@ describe("week1: main page", () => {
             selector: {
                 id: "mainButton",
                 viewName: Main._viewName
-              }
+            }
         })
         const buttonText = await button.getText()
         expect(buttonText).not.toEqual("")
@@ -28,7 +30,7 @@ describe("week1: main page", () => {
             selector: {
                 controlType: "sap.m.List",
                 viewName: Main._viewName
-              }
+            }
         })
         const ListItems = await List.getItems()
         expect(ListItems.length).toBeGreaterThanOrEqual(3)

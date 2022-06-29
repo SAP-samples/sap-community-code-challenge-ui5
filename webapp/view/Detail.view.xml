@@ -1,0 +1,13 @@
+<mvc:View controllerName="ui5.challenge.controller.DetailController" displayBlock="true"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+    <Page title="{i18n>mainTitleText}" showNavButton="true" navButtonPress=".goBack">
+        <content>
+            <Label text="Welcome to details Page" />
+
+            <Button id="dialogButton" text="Open Dialog" press=".onOpenDialog" class="sapUiSmallMarginBottom" ariaHasPopup="Dialog" />
+
+        </content>
+    </Page>
+</mvc:View>
