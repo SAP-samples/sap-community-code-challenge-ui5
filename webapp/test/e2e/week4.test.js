@@ -2,7 +2,6 @@ const { wdi5 } = require("wdio-ui5-service")
 const Detail = require("./pageObjects/Detail")
 const Main = require("./pageObjects/Main")
 
-
 /*
 You have all done a great job so far in building an app that passes predefined tests 🎉
 Now it's time to take it one step further and write your own tests 🚀
