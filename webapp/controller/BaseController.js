@@ -8,10 +8,17 @@ sap.ui.define([
             this.getRouter().navTo(psTarget, pmParameters, pbReplace);
         },
         getRouter: function () {
-            return UIComponent.getRouterFor(this);
+            return this.getOwnerComponent().getRouter();
         },
-        onPress: function () {
 
-        }
+        /**
+             * get table binding by table id
+             *
+             * @param {string} sTableId table id
+             * @returns {Array[Object]} table binding
+             */
+         getListBinding: function (sListId) {
+            return this.byId(sListId).getBinding("items");
+        },
     });
 });

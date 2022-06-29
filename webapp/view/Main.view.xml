@@ -1,0 +1,21 @@
+<mvc:View xmlns="sap.m"
+    xmlns:f="sap.f"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    controllerName="ui5.challenge.controller.Main">
+    <MultiComboBox id="MultiComboBox" selectionFinish="onComboBoxChangeFinish" items="{
+                                    path: '/Stores',
+                                    sorter: { path: 'Name' }
+                                }">
+                                    <core:Item key="{Name}" text="{Name}"/>
+                                </MultiComboBox>
+    <Title id="title" text="{i18n>mainTitleText}"/>
+    	<List
+        id="productList"
+		headerText="Products"
+		items="{/Stores}" >
+		<StandardListItem title="{Name}" />
+	    </List>
+        <Button id="mainButton" text="press" press="onPressButton"/> 
+        <Button id="myControl" text="toDetail" press="onPressDetail"/>        
+</mvc:View>
