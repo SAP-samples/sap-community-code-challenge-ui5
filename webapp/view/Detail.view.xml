@@ -1,0 +1,9 @@
+<mvc:View
+  controllerName="ui5.challenge.controller.Detail"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m">
+
+    <Button id="navButton" text="navButton" press="onNavBack"/>
+    <Button id="dialogButton" text="Dialog" press="showDialog"/>
+
+</mvc:View>
