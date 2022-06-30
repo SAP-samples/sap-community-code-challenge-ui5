@@ -24,8 +24,36 @@ describe("week4: main or detail page ...", () => {
         await Detail.open()
     })
 
-    it("", async () => {
-        // your first test
+    it("Should see close button on dialog", async () => {
+        // const navButton = await browser.asControl({
+        //     selector: {
+        //         id: /.*navButton$/,
+        //         viewName: Detail._viewName
+        //       }
+        // })
+        // expect(await navButton.getVisible()).toBeTruthy()
+
+        // const dialogButton = await browser.asControl({
+        //     selector: {
+        //         id: "dialogButton",
+        //         viewName: Detail._viewName
+        //       }
+        // })
+        // await dialogButton.firePress()
+
+        // //it's also possible to use WebdriverIO selectors
+        // const dialog = await $("#myDialog")
+
+        // const closeButton = await browser.asControl( {
+        //     controlType: "sap.m.Button",
+        //     viewName: Detail._viewName,
+        //     properties: {
+        //       title: "Close"
+        //     }            
+        // })
+        // //await closeButton.firePress()
+        // expect(await closeButton.getVisible()).toBeTruthy()
+
     })
 
     it("", async () => {
