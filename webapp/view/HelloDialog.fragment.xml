@@ -1,0 +1,7 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+    <Dialog id="myDialog" type="Error" title="Hello">
+
+    </Dialog>
+</core:FragmentDefinition> 

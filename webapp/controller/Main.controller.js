@@ -20,7 +20,7 @@ sap.ui.define([
 
         firePress: function(){
             var oRouter = this.getOwnerComponent().getRouter();
-			oRouter.navTo("detail");
+			oRouter.navTo("Detail");
         }
 
 	});
