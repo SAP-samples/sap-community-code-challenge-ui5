@@ -1,0 +1,21 @@
+<mvc:View
+  controllerName="ui5.challenge.controller.Main"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m">
+  <VBox class="sapUiSmallMargin">
+    <Title text="{i18n>mainTitleText}" level="H1" />
+    <Button id="mainButton" text="Main Button" />
+    <Button id="myControl" text="Detail" press=".navToDetail"/>
+  </VBox>
+  <List
+    id="PersonList"
+    headerText="{i18n>ListHeaderTitle}"
+    items="{/persons}"
+    includeItemInSelection="true">
+    <StandardListItem
+      title="{name}"
+      description="{age}" 
+      type="Navigation"
+      press=".navToDetail"/>
+  </List>
+</mvc:View>
