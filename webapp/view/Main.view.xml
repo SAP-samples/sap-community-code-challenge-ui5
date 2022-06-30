@@ -1,0 +1,24 @@
+<mvc:View 
+    controllerName="ui5.challenge.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+    <VBox>
+        <Title text="{i18n>mainTitleText}"/>
+        <List
+            items="{
+                path: 'viewModel>/items'
+            }" >
+            <headerToolbar>
+                <OverflowToolbar>
+                    <ToolbarSpacer/>
+                    <Button id="mainButton" text="{i18n>mainButton}"/>
+                    <Button id="myControl" text="{i18n>myControl}" press="onGoToDetail"/>
+                </OverflowToolbar>
+            </headerToolbar>            
+            <items>
+                <StandardListItem
+                    title="{viewModel>title}"
+                    counter="{viewModel>counter}"/>
+            </items>
+        </List>        
+    </VBox>
+</mvc:View>
