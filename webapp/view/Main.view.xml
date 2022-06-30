@@ -10,7 +10,7 @@
             <headerToolbar>
                 <OverflowToolbar>
                     <ToolbarSpacer/>
-                    <Button id="mainButton" text="{i18n>mainButton}"/>
+                    <Button id="mainButton" text="{i18n>mainButton}" press="onMainButtonPress"/>
                     <Button id="myControl" text="{i18n>myControl}" press="onGoToDetail"/>
                 </OverflowToolbar>
             </headerToolbar>            

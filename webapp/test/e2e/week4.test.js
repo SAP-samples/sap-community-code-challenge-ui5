@@ -19,44 +19,36 @@ https://groups.community.sap.com/t5/coffee-corner-discussions/sap-community-code
 
 describe("week4: main or detail page ...", () => {
     before(async () => {
-        await Main.open()
+        //await Main.open()
         // or
         await Detail.open()
     })
 
-    it("Should see close button on dialog", async () => {
-        // const navButton = await browser.asControl({
-        //     selector: {
-        //         id: /.*navButton$/,
-        //         viewName: Detail._viewName
-        //       }
-        // })
-        // expect(await navButton.getVisible()).toBeTruthy()
-
-        // const dialogButton = await browser.asControl({
-        //     selector: {
-        //         id: "dialogButton",
-        //         viewName: Detail._viewName
-        //       }
-        // })
-        // await dialogButton.firePress()
-
-        // //it's also possible to use WebdriverIO selectors
-        // const dialog = await $("#myDialog")
-
-        // const closeButton = await browser.asControl( {
-        //     controlType: "sap.m.Button",
-        //     viewName: Detail._viewName,
-        //     properties: {
-        //       title: "Close"
-        //     }            
-        // })
-        // //await closeButton.firePress()
-        // expect(await closeButton.getVisible()).toBeTruthy()
-
+    it("Should go back to main page", async () => {
+        const navButton = await browser.asControl({
+            selector: {
+                id: "navButton",
+                viewName: Detail._viewName
+              }
+        })
+        await navButton.firePress()
+        const url = await browser.getUrl()
+        expect(url).toMatch(/.*\/index.html#*$/)
     })
 
-    it("", async () => {
-        // your second test
+    it("In the main page, press Main Button and get message", async () => {
+        const mainButton = await browser.asControl({
+            selector: {
+                id: "mainButton",
+                viewName: Main._viewName
+              }
+        })
+        await mainButton.firePress()
+        const messageBox = await await browser.asControl({
+            controlType: "sap.m.MessageBox",
+            viewName: Main._viewName
+        })
+        expect(messageBox).toBeTruthy()
+
     })
 })
