@@ -18,6 +18,30 @@
             press=".onOpenDialog"
         >
         </Button>
+        <MultiComboBox
+            id="multiCB"
+        >
+        <items>
+            <c:Item
+                key="sk1"
+                text="sk1"
+            >
+            </c:Item>
+            <c:Item
+                key="sk2"
+                text="sk2"
+            >
+      
+            </c:Item>
+            <c:Item
+                key="sk3"
+                text="sk3"
+            >
+            </c:Item>
+
+        </items>
+            
+        </MultiComboBox>
     </content>
 </Page>
 </mvc:View>

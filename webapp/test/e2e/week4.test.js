@@ -24,11 +24,33 @@ describe("week4: main or detail page ...", () => {
         await Detail.open()
     })
 
-    it("", async () => {
+    it("should check checkbox", async () => {
         // your first test
+        const cb = await browser.asControl({
+            selector: {
+                id:"testCB",
+                viewName: Main._viewName
+            }
+        })
+        await cb.setSelected(true)
+        expect(await cb.getProperty("selected")).toBeTruthy()
     })
 
-    it("", async () => {
+    it("should select two items", async () => {
         // your second test
+        const mcb = await browser.asControl({
+            forceSelect: true,
+            selector: { 
+                // id:"multiCB",
+                controlType:"sap.m.MultiComboBox",
+                viewName: Detail._viewName 
+            }
+
+        })
+        console.log("mcb", mcb)
+        await mcb.setSelectedKeys(["sk1", "sk2"])
+        const sk = await mcb.getSelectedKeys()  
+        expect(sk.length).toEqual(2)      
+
     })
 })
