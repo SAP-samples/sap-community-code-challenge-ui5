@@ -1,0 +1,26 @@
+{
+	"newTodo": "",
+	"todos": [{
+			"title": "June 8th, 2022 (10:00am CEST) – Start of the challenge",
+			"completed": true
+		},
+		{
+			"title": "June 15th, 2022 (10:00am CEST) – Uploading of new test file week2.test.js",
+			"completed": false
+		},
+		{
+			"title": "June 22nd, 2022 (10:00am CEST) – Uploading of new test file week3.test.js",
+			"completed": false
+		},
+		{
+			"title": "June 29th, 2022 (10:00am CEST) – Uploading of new test file week4.test.js",
+			"completed": false
+		},
+		{
+			"title": "July 6th, 2022 (10:00am CEST) – End of the challenge",
+			"completed": false
+		}
+	],
+	"itemsRemovable": true,
+	"completedCount": 1
+}
