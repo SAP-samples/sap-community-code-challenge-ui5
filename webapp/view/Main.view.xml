@@ -32,12 +32,6 @@
                 />
             </items>
         </List>
-        <CheckBox
-            id="testCB"
-            text="testCB"    
-        >
-            
-        </CheckBox>
     </content>
 
 </Page>

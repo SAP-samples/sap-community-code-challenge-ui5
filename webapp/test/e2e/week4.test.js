@@ -1,6 +1,6 @@
 const { wdi5 } = require("wdio-ui5-service")
 const Detail = require("./pageObjects/Detail")
-const Main = require("./pageObjects/Main")
+// const Main = require("./pageObjects/Main")
 
 /*
 You have all done a great job so far in building an app that passes predefined tests 🎉
@@ -19,7 +19,7 @@ https://groups.community.sap.com/t5/coffee-corner-discussions/sap-community-code
 
 describe("week4: main or detail page ...", () => {
     before(async () => {
-        await Main.open()
+        // await Main.open()
         // or
         await Detail.open()
     })
@@ -29,7 +29,7 @@ describe("week4: main or detail page ...", () => {
         const cb = await browser.asControl({
             selector: {
                 id:"testCB",
-                viewName: Main._viewName
+                viewName: Detail._viewName
             }
         })
         await cb.setSelected(true)

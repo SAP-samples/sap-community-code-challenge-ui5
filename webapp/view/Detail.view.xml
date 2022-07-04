@@ -42,6 +42,13 @@
         </items>
             
         </MultiComboBox>
+        <CheckBox
+            id="testCB"
+            text="testCB"    
+        >
+            
+        </CheckBox>        
+
     </content>
 </Page>
 </mvc:View>
