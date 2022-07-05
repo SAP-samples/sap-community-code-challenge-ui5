@@ -18,17 +18,48 @@ https://groups.community.sap.com/t5/coffee-corner-discussions/sap-community-code
 */
 
 describe("week4: main or detail page ...", () => {
+    var sListProductName;
+
     before(async () => {
         await Main.open()
         // or
-        await Detail.open()
+        // await Detail.open()
     })
 
-    it("", async () => {
-        // your first test
+    it("should select first list item and navigate to its detail page", async () => {
+        const List = await browser.asControl({
+            selector: {
+                controlType: "sap.m.List",
+                viewName: Main._viewName
+            }
+        })
+        const ListItems = await List.getItems();
+        const FirstItem = ListItems[0];
+        const sId = await FirstItem.getId();
+        await List.setSelectedItemById(sId);
+
+        sListProductName = await FirstItem.getTitle();
+
+        const control = await browser.asControl({
+            selector: {
+                id: "myControl",
+                viewName: Main._viewName
+            }
+        });
+        await control.firePress();
+
+        const url = await browser.getUrl()
+        expect(url).toMatch(/.*#\/RouteDetail\/.+$/)
     })
 
-    it("", async () => {
-        // your second test
+    it("should match the product name", async () => {
+        const control = await browser.asControl({
+            selector: {
+                controlType: "sap.m.MessagePage",
+                viewName: Detail._viewName
+            }
+        });
+        const sDetailProductName = await control.getText();
+        expect(sDetailProductName).toEqual(sListProductName)
     })
 })

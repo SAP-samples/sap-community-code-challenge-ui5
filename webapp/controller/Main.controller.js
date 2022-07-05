@@ -1,6 +1,6 @@
 sap.ui.define([
     "ui5/challenge/controller/BaseController",
-    "sap/ui/model/json/JSONModel",
+    "sap/ui/model/json/JSONModel"
 ], function (
     Controller,
     JSONModel
@@ -12,8 +12,8 @@ sap.ui.define([
          * @override
          */
         onInit: function () {
-            var oModel = new JSONModel(sap.ui.require.toUrl("ui5/challenge/mockdata/products.json"));
-            this.getView().setModel(oModel);
+            // var oModel = new JSONModel(sap.ui.require.toUrl("ui5/challenge/mockdata/products.json"));
+            // this.getView().setModel(oModel);
         },
 
         onButtonPress: function (oEvent) {
@@ -24,10 +24,10 @@ sap.ui.define([
             var oList = this.getView().byId("productsList");
             var oSelectedItem = oList.getSelectedItem();
             if (!oSelectedItem) {
-                oSelectedItem = oList.getItems()[0];
+                this.getRouter().navTo("RouteDetail");
+            } else {
+                this.getRouter().navTo("RouteProductDetail", { "ProductID": oSelectedItem.getBindingContext().getProperty("ProductId") });
             }
-
-            this.getRouter().navTo("RouteDetail", { "ProductID": oSelectedItem.getBindingContext().getProperty("/ProductID") });
         }
     });
 });

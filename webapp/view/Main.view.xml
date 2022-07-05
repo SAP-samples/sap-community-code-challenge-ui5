@@ -18,7 +18,7 @@
 					path: '/ProductCollection',
 					length: 5
 				}"
-				mode="SingleSelect"
+				mode="SingleSelectMaster"
 			>
 			<headerToolbar>
 				<Toolbar >
@@ -33,7 +33,7 @@
 					icon="{ProductPicUrl}"
 					iconDensityAware="false"
 					iconInset="false"
-					title="{Name}"
+					title="{Name}"					
 				/>
 				</items>
 			</List>

@@ -8,7 +8,13 @@
       "version": "0.0.1"
     },
     "title": "{{appTitle}}",
-    "description": "{{appDescription}}"
+    "description": "{{appDescription}}",
+    "dataSources": {
+      "mainDataSource": {
+        "type": "JSON",
+        "uri": "mockdata/products.json"
+      }
+    }
   },
   "sap.ui": {
     "technology": "UI5",
@@ -62,6 +68,13 @@
           "target": [
             "TargetDetail"
           ]
+        },
+        {
+          "pattern": "RouteDetail/{ProductID}",
+          "name": "RouteProductDetail",
+          "target": [
+            "TargetDetail"
+          ]
         }
       ],
       "targets": {
@@ -93,6 +106,10 @@
         "settings": {
           "bundleName": "ui5.challenge.i18n.i18n"
         }
+      },
+      "": {
+        "dataSource": "mainDataSource",
+        "type": "sap.ui.model.json.JSONModel"
       }
     }
   }

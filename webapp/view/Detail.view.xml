@@ -8,9 +8,9 @@
 	busyIndicatorDelay="0"
 >
     <MessagePage 
-        icon="sap-icon://in-progress"
-        text="Should be implemented soon"
-        description=""
+        icon="{detailModel>/ProductPicUrl}"
+        text="{detailModel>/Name}"
+        description="{detailModel>/Description}"
 		showNavButton="true"
 		navButtonPress=".onNavButtonPress"
     >
