@@ -1,0 +1,22 @@
+{
+  "Items": [
+    {
+      "Id": "1",
+      "Title": "Item 1",
+      "Description": "Best Item",
+      "Icon": "sap-icon://activity-assigned-to-goal"
+    },
+    {
+      "Id": "2",
+      "Title": "Item 2",
+      "Description": "a Item",
+      "Icon": "sap-icon://activity-assigned-to-goal"
+    },
+    {
+      "Id": "3",
+      "Title": "Item 3",
+      "Description": "Maybe not an Item",
+      "Icon": "sap-icon://activity-assigned-to-goal"
+    }
+  ]
+}
