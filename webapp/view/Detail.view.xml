@@ -1,5 +1,20 @@
 <mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="ui5.challenge.controller.DetailController">
     <Page title="{i18n>detailPageTitle}" showNavButton="true" navButtonPress=".onNavBack">
         <Button id="dialogButton" text="{i18n>dialogButton}" press=".onPress" />
+        <Panel id="detailPanel" class="sapUiResponsiveMargin">
+            <headerToolbar>
+                <OverflowToolbar>
+                    <Title id="panelTitle" text="{name} ({id})"/>
+                </OverflowToolbar>
+            </headerToolbar>
+            <content>
+                <GenericTag
+                    id="statusTag"
+                    text="{= ${status} ? 'Received' : 'En route' }"
+					status="{= ${status} ? 'Success' : 'Error' }"
+					design="StatusIconHidden">
+				</GenericTag>
+            </content>
+        </Panel>
     </Page>
 </mvc:View>
