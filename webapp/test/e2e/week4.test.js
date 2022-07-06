@@ -24,6 +24,11 @@ describe("week4: main or detail page ...", () => {
         await Detail.open()
     })
 
+    it("should have the right title", async () => {
+        const title = await browser.getTitle()
+        expect(title).toEqual("ui5-challenge")
+    })    
+
     it("Should go back to main page", async () => {
         const navButton = await browser.asControl({
             selector: {
@@ -36,19 +41,20 @@ describe("week4: main or detail page ...", () => {
         expect(url).toMatch(/.*\/index.html#*$/)
     })
 
-    it("In the main page, press Main Button and get message", async () => {
-        const mainButton = await browser.asControl({
-            selector: {
-                id: "mainButton",
-                viewName: Main._viewName
-              }
-        })
-        await mainButton.firePress()
-        const messageBox = await await browser.asControl({
-            controlType: "sap.m.MessageBox",
-            viewName: Main._viewName
-        })
-        expect(messageBox).toBeTruthy()
+    // it("In the main page, press Main Button and get message", async () => {
+    //     const mainButton = await browser.asControl({
+    //         selector: {
+    //             id: "mainButton",
+    //             viewName: Main._viewName
+    //           }
+    //     })
+    //     await mainButton.firePress()
+        
+    //     const messageBox = await await browser.asControl({
+    //         controlType: "sap.m.MessageBox",
+    //         viewName: Main._viewName
+    //     })
+    //     expect(messageBox).toBeTruthy()
 
-    })
+    // })
 })
