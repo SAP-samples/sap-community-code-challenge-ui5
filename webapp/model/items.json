@@ -1,0 +1,54 @@
+{
+  "items": [
+    {
+      "id": "96d729fc-9006-4355-b48e-6cad649295cd",
+      "name": "middleware",
+      "status": false
+    },
+    {
+      "id": "80f91695-461a-455e-8dd4-06deb7c48ea8",
+      "name": "fresh-thinking",
+      "status": false
+    },
+    {
+      "id": "8e173faf-a3f6-4664-87ae-0474e0651224",
+      "name": "motivating",
+      "status": true
+    },
+    {
+      "id": "958405b5-b7b4-47b4-9fc8-a830427665e5",
+      "name": "Business-focused",
+      "status": false
+    },
+    {
+      "id": "3297489f-764d-48d1-a035-49b44bcda5e0",
+      "name": "Integrated",
+      "status": false
+    },
+    {
+      "id": "44877956-7ef2-491c-b5dc-d69c90e68873",
+      "name": "Stand-alone",
+      "status": false
+    },
+    {
+      "id": "5be6a582-df4c-4968-ae3f-fbca7b6d09b7",
+      "name": "toolset",
+      "status": false
+    },
+    {
+      "id": "01b3515f-32fe-435f-8939-b9ce4a2ff043",
+      "name": "client-driven",
+      "status": false
+    },
+    {
+      "id": "2f3ddf34-42c0-4552-b832-fe1a351ae7e3",
+      "name": "bi-directional",
+      "status": false
+    },
+    {
+      "id": "9695da60-5078-42c7-b32e-082f85b14aa0",
+      "name": "analyzing",
+      "status": true
+    }
+  ]
+}

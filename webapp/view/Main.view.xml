@@ -1,0 +1,30 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="ui5.challenge.controller.MainController">
+    <Page class="sapUiContentPadding">
+        <customHeader>
+            <OverflowToolbar id="mainPageToolbar">
+                <Title id="mainPageTitle" text="{i18n>mainTitleText}" />
+                <ToolbarSpacer />
+                <Button id="myControl" text="{i18n>navigateButton}" press=".onPress" />
+            </OverflowToolbar>
+        </customHeader>
+        <content>
+            <List id="itemList" items="{/items}">
+                <headerToolbar>
+                    <OverflowToolbar id="toolbar">
+                        <Button id="mainButton" text="{i18n>mainButton}" />
+                    </OverflowToolbar>
+                </headerToolbar>
+                <items>
+                    <ObjectListItem title="{name}">
+                        <firstStatus>
+                            <ObjectStatus
+                                text="{= ${status} ? 'Received' : 'En route' }"
+                                state="{= ${status} ? 'Success' : 'Warning' }"/>
+                        </firstStatus>
+                        <ObjectAttribute text="{id}" />
+                    </ObjectListItem>
+                </items>
+            </List>
+        </content>
+    </Page>
+</mvc:View>
