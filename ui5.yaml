@@ -25,3 +25,20 @@ server:
       configuration:
         component: ui5.challenge
         ui5Theme: sap_fiori_3
+--- # 3rd party plugins
+specVersion: "2.6"
+kind: extension
+type: project-shim
+metadata:
+  name: plugins
+shims:
+  configurations:
+    xrpl: # name as defined in package.json
+      specVersion: "2.6"
+      type: module # Use module type
+      metadata:
+        name: xrpl-latest.js
+      resources:
+        configuration:
+          paths:
+            /plugins/xrpl/: ""
