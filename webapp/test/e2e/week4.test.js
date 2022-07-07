@@ -21,12 +21,6 @@ describe("week4: main or detail page ...", () => {
         await Detail.open()
     })
 
-    // Needed just for wdi has enough time to open detail page
-    it("should have the right title", async () => {
-        const title = await browser.getTitle()
-        expect(title).toEqual("ui5-challenge")
-    })
-
     it("should have correct panel title", async () => {
         // const detailPanel = await browser.asControl({
         //     selector: {
