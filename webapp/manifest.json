@@ -47,8 +47,37 @@
         "controlId": "app",
         "clearControlAggregation": false
       },
-      "routes": [],
-      "targets": {}
+      "routes": [
+        {
+          "pattern": "",
+          "name": "main",
+          "target": [
+            "main"
+          ]
+        },
+        {
+          "name": "detail",
+          "pattern": "RouteDetail",
+          "target": "toDoDetails"
+        }
+      ],
+      "targets": {
+        "main": {
+          "viewName": "Main",
+          "viewId": "main",
+          "viewLevel": 1
+        },
+        "toDoDetails": {
+          "viewName": "Detail",
+          "viewId": "Detail",
+          "viewLevel": 2
+				},
+        "notFound": {
+					"id": "notFound",
+					"name": "NotFound",
+					"transition": "show"
+				}
+      }
     },
     "rootView": {
       "viewName": "ui5.challenge.view.App",
@@ -62,7 +91,18 @@
         "settings": {
           "bundleName": "ui5.challenge.i18n.i18n"
         }
-      }
-    }
+      },
+			"": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "model/todoitems.json"
+			}
+		},
+		"resources": {
+			"css": [
+				{
+					"uri": "css/styles.css"
+				}
+			]
+		}
   }
 }
