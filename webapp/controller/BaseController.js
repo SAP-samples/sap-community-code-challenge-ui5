@@ -8,5 +8,17 @@ sap.ui.define(["sap/ui/core/mvc/Controller", "sap/ui/core/UIComponent"], functio
     getRouter: function () {
       return UIComponent.getRouterFor(this);
     },
+    formatXrplDrops: function (value) {
+      const result = value / 1000000;
+      if (isNaN(result)) {
+        return 0;
+      } else {
+        return result;
+      }
+    },
+    formatBaseFee: function (value) {
+      const result = parseInt(value, 16);
+      return result / 1000000;
+    },
   });
 });

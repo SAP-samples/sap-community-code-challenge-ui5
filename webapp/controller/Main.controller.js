@@ -31,16 +31,7 @@ sap.ui.define(["ui5/challenge/controller/BaseController", "ui5/challenge/plugins
       this.readXRPL();
     },
     navToDetails: function (event) {
-      var oRouter = this.getOwnerComponent().getRouter();
-      oRouter.navTo("Detail");
-    },
-    formatXrplDrops: function (value) {
-      const result = value / 1000000;
-      if (isNaN(result)) {
-        return 0;
-      } else {
-        return result;
-      }
+      this.navTo("Detail");
     },
   });
 });
