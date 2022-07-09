@@ -24,7 +24,7 @@
           </ObjectPageSubSection>
         </subSections>
       </ObjectPageSection>
-      <ObjectPageSection id="moreInfosSection" title="{i18n>fee-information}">
+      <ObjectPageSection id="moreInfosSection" title="{i18n>more-dev-information}">
         <subSections>
           <ObjectPageSubSection id="moreInfosSubsection">
             <blocks>
