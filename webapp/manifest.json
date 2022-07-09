@@ -59,6 +59,13 @@
           "target": [
             "TargetMain"
           ]
+        },
+        {
+          "name": "Detail",
+          "pattern": "RouteDetail",
+          "target": [
+            "TargetDetail"
+          ]
         }
       ],
       "targets": {
@@ -66,6 +73,11 @@
           "viewType": "XML",
           "viewId": "Main",
           "viewName": "Main"
+        },
+        "TargetDetail": {
+          "viewType": "XML",
+          "viewId": "Detail",
+          "viewName": "Detail"
         }
       }
     },

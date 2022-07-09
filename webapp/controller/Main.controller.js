@@ -1,7 +1,7 @@
-sap.ui.define(["sap/ui/core/mvc/Controller", "ui5/challenge/plugins/xrpl/xrpl-latest"], function (Controller, Xrpl) {
+sap.ui.define(["ui5/challenge/controller/BaseController", "ui5/challenge/plugins/xrpl/xrpl-latest"], function (BaseController, Xrpl) {
   "use strict";
 
-  return Controller.extend("ui5.challenge.controller.Main", {
+  return BaseController.extend("ui5.challenge.controller.Main", {
     onInit: function () {
       this.readXRPL();
     },
@@ -29,6 +29,10 @@ sap.ui.define(["sap/ui/core/mvc/Controller", "ui5/challenge/plugins/xrpl/xrpl-la
     },
     onLoadXrplData: function (event) {
       this.readXRPL();
+    },
+    navToDetails: function (event) {
+      var oRouter = this.getOwnerComponent().getRouter();
+      oRouter.navTo("Detail");
     },
     formatXrplDrops: function (value) {
       const result = value / 1000000;
