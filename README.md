@@ -1,5 +1,7 @@
 # SAP Community Code Challenge - UI5
+
 <!--- Register repository https://api.reuse.software/register, then add REUSE badge:-->
+
 [![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/sap-community-code-challenge-ui5)](https://api.reuse.software/info/github.com/SAP-samples/sap-community-code-challenge-ui5)
 [![Visits Badge](https://badges.pufler.dev/visits/SAP-samples/sap-community-code-challenge-ui5)](https://badges.pufler.dev)
 [![Updated Badge](https://badges.pufler.dev/updated/SAP-samples/sap-community-code-challenge-ui5)](https://badges.pufler.dev)
@@ -8,10 +10,20 @@
 
 The [change log](/CHANGELOG.md) describes notable changes in this package.
 
-## Description
+## Comment from me
+
+Interesting points about this fork / challenge entry
+
+1. did use xrpl javascript libray
+1. the newest version of ui5 tooling extension did want to upgrade this project. Which I did without much of a problem
+1. did use easy-ui5 generator for the new views, worked nicely
+
+## Discription
+
 This repository is the starting point for the SAP Community Code Challenge for UI5 (see [SAP Community Coffee Corner thread](https://groups.community.sap.com/t5/coffee-corner/sap-community-code-challenge-testing-ui5-apps-with-wdi5/td-p/5229) and [corresponding blog post](https://blogs.sap.com/2022/06/08/sap-community-code-challenge-testing-ui5-apps-with-wdi5/)). The repository contains an empty OpenUI5 project and a series of [end-to-end tests](/webapp/test/e2e/) written with [wdi5](https://js-soft.github.io/wdi5/#/). In order to take part in the challenge it is your job to develop the OpenUI5 app and make the tests pass (following the process of [test-driven development](https://en.wikipedia.org/wiki/Test-driven_development)). The purpose of the challenge is to get familiar with the **wdi5**, which will be [UI5's official end-to-end testing framework](https://blogs.sap.com/2022/02/12/the-king-is-dead-long-live-the-king-wdi5-as-uiveri5-successor/) in the future.
 
 ## Participation
+
 Complete the following steps to take part in the challenge:
 
 1. Fork this repository.
@@ -27,21 +39,27 @@ Complete the following steps to take part in the challenge:
 As this challenge focuses on test-driven development and the wdi5 testing framework, there are no requirements in terms of what your application has to looks like or its content, as long as it passes the tests. Feel free to get creative and build the application you always wanted to build, but don't edit the tests 😉
 
 ## Requirements
+
 Node.js version 14.x or 16.x ([https://nodejs.org/en/download/](https://nodejs.org/en/download/)).
 
 ## Download and Installation
+
 See [Participation](#participation).
 
 ## Known Issues
+
 No known issues.
 
 ## How to obtain support
+
 [Create an issue](https://github.com/SAP-samples/sap-community-code-challenge-ui5/issues) in this repository if you find a bug or have questions about the content.
- 
+
 For additional support, [ask a question in SAP Community](https://answers.sap.com/questions/ask.html).
 
 ## Contributing
+
 If you wish to contribute code, offer fixes or improvements, please send a pull request. Due to legal reasons, contributors will be asked to accept a DCO when they create the first pull request to this project. This happens in an automated fashion during the submission process. SAP uses [the standard DCO text of the Linux Foundation](https://developercertificate.org/).
 
 ## License
+
 Copyright (c) 2022 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](/LICENSE) file.
