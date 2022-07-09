@@ -11,17 +11,25 @@
 
     <headerContent>
       <m:ObjectAttribute title="" text="{i18n>more-xrpl-information}"/>
-      <m:Link text="{i18n>link-to-xrpl-dev}" href="https://xrpl.org/docs.html"></m:Link>
     </headerContent>
 
     <sections>
-      <ObjectPageSection title="{i18n>fee-information}">
+      <ObjectPageSection id="feeSection" title="{i18n>fee-information}">
         <subSections>
-          <ObjectPageSubSection>
+          <ObjectPageSubSection id="feeSubSection">
             <blocks>
-
               <m:Text text="{i18n>minimum-fee}: { path:'xrpl>/LedgerFees/BaseFee',formatter:'.formatBaseFee'} {i18n>XRP}" />
               <m:Button id="dialogButton" text="{i18n>show-fee-details}" icon="sap-icon://zoom-in" press=".onFeeDetailsDialog" />
+            </blocks>
+          </ObjectPageSubSection>
+        </subSections>
+      </ObjectPageSection>
+      <ObjectPageSection id="moreInfosSection" title="{i18n>fee-information}">
+        <subSections>
+          <ObjectPageSubSection id="moreInfosSubsection">
+            <blocks>
+              <m:Link id="linkToXrplDoc" text="{i18n>link-to-xrpl-dev}" href="https://xrpl.org/docs.html" target="_blank"></m:Link>
+              <m:Link id="linkToXummDoc" text="{i18n>link-to-xumm-dev}" href="https://xumm.readme.io" target="_blank"></m:Link>
             </blocks>
           </ObjectPageSubSection>
         </subSections>
