@@ -1,0 +1,21 @@
+1683186140324	geckodriver	INFO	Listening on 127.0.0.1:59209
+1683186140587	webdriver::server	DEBUG	-> POST /session {"capabilities":{"alwaysMatch":{"acceptInsecureCerts":true,"browserName":"firefox","browserVersion":"102","platformName":"linux","moz:firefoxOptions":{"binary":"/extbin/bin/firefox","args":["-headless","-profile","/tmp/profile"],"log":{"level":"trace"}}},"firstMatch":[{}]},"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox","browserVersion":"102","platformName":"linux","moz:firefoxOptions":{"binary":"/extbin/bin/firefox","args":["-headless","-profile","/tmp/profile"],"log":{"level":"trace"}}}}
+1683186140588	geckodriver::capabilities	DEBUG	Trying to read firefox version from ini files
+1683186140588	geckodriver::capabilities	DEBUG	Trying to read firefox version from binary
+1683186140588	geckodriver::capabilities	DEBUG	Failed to get binary version
+1683186140588	webdriver::server	DEBUG	<- 400 Bad Request {"value":{"error":"invalid argument","message":"binary is not a Firefox executable","stacktrace":""}}
+1683186140594	webdriver::server	DEBUG	-> POST /session {"capabilities":{"alwaysMatch":{"acceptInsecureCerts":true,"browserName":"firefox","browserVersion":"102","platformName":"linux","moz:firefoxOptions":{"binary":"/extbin/bin/firefox","args":["-headless","-profile","/tmp/profile"],"log":{"level":"trace"}}},"firstMatch":[{}]},"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox","browserVersion":"102","platformName":"linux","moz:firefoxOptions":{"binary":"/extbin/bin/firefox","args":["-headless","-profile","/tmp/profile"],"log":{"level":"trace"}}}}
+1683186140595	geckodriver::capabilities	DEBUG	Trying to read firefox version from ini files
+1683186140595	geckodriver::capabilities	DEBUG	Trying to read firefox version from binary
+1683186140595	geckodriver::capabilities	DEBUG	Failed to get binary version
+1683186140594	webdriver::server	DEBUG	<- 400 Bad Request {"value":{"error":"invalid argument","message":"binary is not a Firefox executable","stacktrace":""}}
+1683186140599	webdriver::server	DEBUG	-> POST /session {"capabilities":{"alwaysMatch":{"acceptInsecureCerts":true,"browserName":"firefox","browserVersion":"102","platformName":"linux","moz:firefoxOptions":{"binary":"/extbin/bin/firefox","args":["-headless","-profile","/tmp/profile"],"log":{"level":"trace"}}},"firstMatch":[{}]},"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox","browserVersion":"102","platformName":"linux","moz:firefoxOptions":{"binary":"/extbin/bin/firefox","args":["-headless","-profile","/tmp/profile"],"log":{"level":"trace"}}}}
+1683186140599	geckodriver::capabilities	DEBUG	Trying to read firefox version from ini files
+1683186140599	geckodriver::capabilities	DEBUG	Trying to read firefox version from binary
+1683186140599	geckodriver::capabilities	DEBUG	Failed to get binary version
+1683186140600	webdriver::server	DEBUG	<- 400 Bad Request {"value":{"error":"invalid argument","message":"binary is not a Firefox executable","stacktrace":""}}
+1683186140601	webdriver::server	DEBUG	-> POST /session {"capabilities":{"alwaysMatch":{"acceptInsecureCerts":true,"browserName":"firefox","browserVersion":"102","platformName":"linux","moz:firefoxOptions":{"binary":"/extbin/bin/firefox","args":["-headless","-profile","/tmp/profile"],"log":{"level":"trace"}}},"firstMatch":[{}]},"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox","browserVersion":"102","platformName":"linux","moz:firefoxOptions":{"binary":"/extbin/bin/firefox","args":["-headless","-profile","/tmp/profile"],"log":{"level":"trace"}}}}
+1683186140602	geckodriver::capabilities	DEBUG	Trying to read firefox version from ini files
+1683186140602	geckodriver::capabilities	DEBUG	Trying to read firefox version from binary
+1683186140602	geckodriver::capabilities	DEBUG	Failed to get binary version
+1683186140603	webdriver::server	DEBUG	<- 400 Bad Request {"value":{"error":"invalid argument","message":"binary is not a Firefox executable","stacktrace":""}}
