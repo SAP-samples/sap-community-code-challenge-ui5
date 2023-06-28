@@ -3,11 +3,18 @@
   "sap.app": {
     "id": "ui5.challenge",
     "type": "application",
+    "i18n": "i18n/i18n.properties",
     "applicationVersion": {
       "version": "0.0.1"
     },
     "title": "{{appTitle}}",
-    "description": "{{appDescription}}"
+    "description": "{{appDescription}}",
+    "dataSources": {
+      "mainDataSource": {
+        "type": "JSON",
+        "uri": "mockdata/products.json"
+      }
+    }
   },
   "sap.ui": {
     "technology": "UI5",
@@ -47,8 +54,45 @@
         "controlId": "app",
         "clearControlAggregation": false
       },
-      "routes": [],
-      "targets": {}
+      "routes": [
+        {
+          "pattern": "",
+          "name": "RouteMain",
+          "target": [
+            "TargetMain"
+          ]
+        },
+        {
+          "pattern": "RouteDetail",
+          "name": "RouteDetail",
+          "target": [
+            "TargetDetail"
+          ]
+        },
+        {
+          "pattern": "RouteDetail/{ProductID}",
+          "name": "RouteProductDetail",
+          "target": [
+            "TargetDetail"
+          ]
+        }
+      ],
+      "targets": {
+        "TargetMain": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewName": "Main",
+          "viewId": "main"
+        },
+        "TargetDetail": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewName": "Detail",
+          "viewId": "Detail"
+        }
+      }
     },
     "rootView": {
       "viewName": "ui5.challenge.view.App",
@@ -62,6 +106,10 @@
         "settings": {
           "bundleName": "ui5.challenge.i18n.i18n"
         }
+      },
+      "": {
+        "dataSource": "mainDataSource",
+        "type": "sap.ui.model.json.JSONModel"
       }
     }
   }

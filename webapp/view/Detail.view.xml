@@ -1,0 +1,29 @@
+<mvc:View
+	controllerName="ui5.challenge.controller.Detail"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:c="sap.ui.core"
+	displayBlock="true"
+	height="100%"
+	busyIndicatorDelay="0"
+>
+    <MessagePage 
+        icon="{detailModel>/ProductPicUrl}"
+        text="{detailModel>/Name}"
+        description="{detailModel>/Description}"
+		showNavButton="true"
+		navButtonPress=".onNavButtonPress"
+    >
+		<buttons>
+			<Button
+				id="dialogButton"
+				enabled="true"
+				text="{i18n>Detail.dialogButton.text}"
+				textDirection="Inherit"
+				type="Emphasized"
+				press=".onDialogButtonPress"
+			/>
+		</buttons>
+	</MessagePage>
+
+</mvc:View>
