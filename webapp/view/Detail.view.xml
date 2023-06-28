@@ -1,0 +1,54 @@
+<mvc:View
+	controllerName="ui5.challenge.controller.Detail"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:c="sap.ui.core"
+	displayBlock="true"
+	height="100%"
+	busyIndicatorDelay="0"
+>
+<Page
+    title="Detail"
+    showNavButton="true"
+>
+    <content>
+        <Button
+            id="dialogButton"
+            text="Open dialog"
+            press=".onOpenDialog"
+        >
+        </Button>
+        <MultiComboBox
+            id="multiCB"
+        >
+        <items>
+            <c:Item
+                key="sk1"
+                text="sk1"
+            >
+            </c:Item>
+            <c:Item
+                key="sk2"
+                text="sk2"
+            >
+      
+            </c:Item>
+            <c:Item
+                key="sk3"
+                text="sk3"
+            >
+            </c:Item>
+
+        </items>
+            
+        </MultiComboBox>
+        <CheckBox
+            id="testCB"
+            text="testCB"    
+        >
+            
+        </CheckBox>        
+
+    </content>
+</Page>
+</mvc:View>
