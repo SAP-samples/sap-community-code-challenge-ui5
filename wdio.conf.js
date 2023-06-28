@@ -2,7 +2,7 @@ exports.config = {
     wdi5: {
         screenshotPath: require("path").join("webapp", "test", "screenshots"), // [optional] {string}, default: ""
         screenshotsDisabled: false, // [optional] {boolean}, default: false; if set to true, screenshots won't be taken and not written to file system
-        logLevel: "error", // [optional] error | verbose | silent, default: "error"
+        logLevel: "silent", // [optional] error | verbose | silent, default: "error"
         url: "index.html", // [mandatory] {string} name of your bootstrap html file. If your server autoredirects to a 'domain:port/'-like root url, use empty string ''
         skipInjectUI5OnStart: false, // [optional] {boolean}, default: false; true when UI5 is not on the start page, you need to later call <wdioUI5service>.injectUI5() manually
         waitForUI5Timeout: 15000 // [optional] {number}, default: 15000; maximum waiting time in milliseconds while checking for UI5 availability
@@ -58,24 +58,15 @@ exports.config = {
     // https://saucelabs.com/platform/platform-configurator
     //
     capabilities: [{
-    
-        // maxInstances can get overwritten per capability. So if you have an in-house Selenium
-        // grid with only 5 firefox instances available you can make sure that not more than
-        // 5 instances get started at a time.
-        maxInstances: 5,
-        //
-        browserName: 'chrome',
-        acceptInsecureCerts: true,
-        "goog:chromeOptions": {
-            args:
-                process.argv.indexOf("--headless") > -1
-                    ? ["--headless"]
-                    : []
+        "acceptInsecureCerts": true,
+        "browserName": "firefox",
+        "browserVersion": "102",
+        "platformName": "linux",
+        "moz:firefoxOptions": {
+          "binary": '/extbin/bin/firefox',
+          "args": ['-headless', '-profile', '/tmp/profile'],
+          "log": {"level": "trace"},
         }
-        // If outputDir is provided WebdriverIO can capture driver session logs
-        // it is possible to configure which logTypes to include/exclude.
-        // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
-        // excludeDriverLogs: ['bugreport', 'server'],
     }],
     //
     // ===================
@@ -84,7 +75,7 @@ exports.config = {
     // Define all options that are relevant for the WebdriverIO instance here
     //
     // Level of logging verbosity: trace | debug | info | warn | error | silent
-    logLevel: 'info',
+    logLevel: 'debug',
     //
     // Set specific log levels per logger
     // loggers:
@@ -124,7 +115,23 @@ exports.config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    services: ['chromedriver','ui5'],
+    services: [ 
+        [
+        'geckodriver', 
+        // service options 
+        {
+        // OPTIONAL: Arguments passed to geckdriver executable.
+        // Check geckodriver --help for all options. Example:
+        // ['--log=debug', '--binary=/var/ff50/firefox'] 
+        // Default: empty array
+        args: ['--log=trace'],
+        
+        // The path where the output of the Geckodriver server should
+        // be stored (uses the config.outputDir by default when not set).
+         outputDir: './logs' 
+         }
+        ],'ui5'
+    ],
     
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
