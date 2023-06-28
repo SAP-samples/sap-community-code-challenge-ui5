@@ -1,0 +1,15 @@
+<mvc:View
+  controllerName="ui5.challenge.controller.Main"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m">
+  <Title level="H3" text="{i18n>mainTitleText}" />
+    <List items="{list>/}">
+    <StandardListItem
+			title="{list>value}"
+       press="firePress"/>
+       <!-- Week 2 -->
+    </List>
+    <Button id="mainButton" text="Button"/>
+    <!-- Week 2 -->
+    <Button id="myControl" text="Button" press="firePress"/>
+</mvc:View>
