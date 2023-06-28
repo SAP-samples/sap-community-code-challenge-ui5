@@ -11,7 +11,7 @@ describe("week2: main page", () => {
             selector: {
                 i18NText: {
                     propertyName: "text",
-                    key: "mainTitleText"
+                    key: "mainTitleText" 
                 },
                 controlType: "sap.m.Title",
                 viewName: Main._viewName
