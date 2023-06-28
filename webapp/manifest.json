@@ -7,7 +7,13 @@
       "version": "0.0.1"
     },
     "title": "{{appTitle}}",
-    "description": "{{appDescription}}"
+    "description": "{{appDescription}}",
+    "dataSources": {
+      "localJson": {
+        "uri": "model/Items.json",
+        "type": "JSON"
+      }
+    }
   },
   "sap.ui": {
     "technology": "UI5",
@@ -47,8 +53,32 @@
         "controlId": "app",
         "clearControlAggregation": false
       },
-      "routes": [],
-      "targets": {}
+      "routes": [
+        {
+          "name": "Main",
+          "pattern": "",
+          "target": ["Main"]
+        },
+        {
+          "name": "RouteDetail",
+          "pattern": "RouteDetail",
+          "target": ["Detail"]
+        }
+      ],
+      "targets": {
+        "Main": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewName": "Main"
+        },
+        "Detail": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewName": "Detail"
+        }
+      }
     },
     "rootView": {
       "viewName": "ui5.challenge.view.App",
@@ -56,12 +86,17 @@
       "async": true,
       "id": "app"
     },
+
     "models": {
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
           "bundleName": "ui5.challenge.i18n.i18n"
         }
+      },
+      "": {
+        "type": "sap.ui.model.json.JSONModel",
+        "dataSource": "localJson"
       }
     }
   }
