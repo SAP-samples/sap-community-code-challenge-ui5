@@ -1,0 +1,19 @@
+<mvc:View controllerName="ui5.challenge.controller.Main" displayBlock="true"
+  xmlns="sap.m"
+  xmlns:mvc="sap.ui.core.mvc">
+  <Page id="Main">
+    <headerContent>
+      <Title text="{i18n>mainTitleText}"></Title>
+    </headerContent>
+    <content>
+
+      <Button id="mainButton" type="Default" text="{i18n>load-data}" press=".onLoadXrplData"></Button>
+      <Button id="myControl" type="Ghost" text="{i18n>show-ledger-details}" press=".navToDetails"/>
+      <List id="xrplData" items="{xrpl>/LedgerData}">
+        <items>
+          <StandardListItem title="{i18n>account} {xrpl>Account}" description="{i18n>balance} {path: 'xrpl>Balance', formatter:'.formatXrplDrops'} {i18n>XRP}" />
+        </items>
+      </List>
+    </content>
+  </Page>
+</mvc:View>
