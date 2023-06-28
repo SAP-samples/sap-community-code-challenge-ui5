@@ -6,6 +6,12 @@
     "applicationVersion": {
       "version": "0.0.1"
     },
+    "dataSources": {     
+      "JSONmodel": {
+          "uri": "models/supportModel.json",
+          "type": "JSON"
+      }
+  },
     "title": "{{appTitle}}",
     "description": "{{appDescription}}"
   },
@@ -47,8 +53,34 @@
         "controlId": "app",
         "clearControlAggregation": false
       },
-      "routes": [],
-      "targets": {}
+      "routes": [
+        {
+          "pattern": "",
+          "name": "Main",
+          "target":[
+            "Main"
+          ]
+        },
+        {
+          "pattern": "RouteDetail",
+          "name": "Detail",
+          "target":[
+            "detail"
+          ]
+        }
+      ],
+      "targets": {
+        "Main":{
+          "viewName": "Main",
+          "viewId": "Main",
+          "viewLevel": 1
+        },
+        "detail":{
+          "viewName": "Detail",
+          "viewId": "Detail",
+          "viewLevel": 2
+        }
+      }
     },
     "rootView": {
       "viewName": "ui5.challenge.view.App",
@@ -57,6 +89,9 @@
       "id": "app"
     },
     "models": {
+      "": {
+        "dataSource": "JSONmodel"                
+    },
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
