@@ -1,0 +1,17 @@
+{
+    "buttonText": "Hello World !",
+    "items": [
+        {
+            "title": "first",
+            "counter": 1
+        },
+        {
+            "title": "second",
+            "counter": 2
+        },
+        {
+            "title": "third",
+            "counter": 3
+        }
+    ]
+}

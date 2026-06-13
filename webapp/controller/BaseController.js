@@ -1,6 +1,7 @@
 sap.ui.define([
-    "sap/ui/core/mvc/Controller"
-], function (Controller) {
+    "sap/ui/core/mvc/Controller",
+    "sap/ui/core/UIComponent"
+], function (Controller, UIComponent) {
     "use strict";
 
     return Controller.extend("ui5.challenge.controller.BaseController", {
@@ -9,9 +10,6 @@ sap.ui.define([
         },
         getRouter: function () {
             return UIComponent.getRouterFor(this);
-        },
-        onPress: function () {
-
         }
     });
 });
