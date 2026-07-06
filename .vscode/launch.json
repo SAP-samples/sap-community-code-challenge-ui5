@@ -1,0 +1,63 @@
+{
+  "configurations": [
+    {
+      "name": "Start sap-community-code-challenge-ui5",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "npx",
+      "cwd": "${workspaceFolder}",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": ["fiori", "run"],
+      "args": ["--open", "test/flpSandbox.html#app-tile"],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "port": 9229,
+      "env": {
+        "DEBUG": "--inspect",
+        "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false"
+      }
+    },
+    {
+      "name": "Start sap-community-code-challenge-ui5 Mock",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "npx",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": ["fiori", "run"],
+      "args": ["--open", "test/flpSandboxMockServer.html#app-tile"],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "port": 9229,
+      "env": {
+        "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false"
+      }
+    },
+    {
+      "name": "Start sap-community-code-challenge-ui5 Local",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "npx",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": ["fiori", "run"],
+      "args": ["--config", "./ui5-local.yaml", "--open", "test/flpSandbox.html#app-tile"],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "port": 9229,
+      "env": {
+        "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false"
+      }
+    }
+  ],
+  "compounds": []
+}

@@ -1,0 +1,39 @@
+<mvc:View controllerName="ui5.challenge.controller.Detail" displayBlock="true"
+  xmlns:m="sap.m"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.uxap">
+  <ObjectPageLayout id="ObjectPageLayout" upperCaseAnchorBar="false">
+    <headerTitle>
+      <ObjectPageHeader objectTitle="{i18n>title}">
+        <m:Button id="navButton" text="{i18n>nav-back}" type="Ghost" press=".navBack"/>
+      </ObjectPageHeader>
+    </headerTitle>
+
+    <headerContent>
+      <m:ObjectAttribute title="" text="{i18n>more-xrpl-information}"/>
+    </headerContent>
+
+    <sections>
+      <ObjectPageSection id="feeSection" title="{i18n>fee-information}">
+        <subSections>
+          <ObjectPageSubSection id="feeSubSection">
+            <blocks>
+              <m:Text text="{i18n>minimum-fee}: { path:'xrpl>/LedgerFees/BaseFee',formatter:'.formatBaseFee'} {i18n>XRP}" />
+              <m:Button id="dialogButton" text="{i18n>show-fee-details}" icon="sap-icon://zoom-in" press=".onFeeDetailsDialog" />
+            </blocks>
+          </ObjectPageSubSection>
+        </subSections>
+      </ObjectPageSection>
+      <ObjectPageSection id="moreInfosSection" title="{i18n>more-dev-information}">
+        <subSections>
+          <ObjectPageSubSection id="moreInfosSubsection">
+            <blocks>
+              <m:Link id="linkToXrplDoc" text="{i18n>link-to-xrpl-dev}" href="https://xrpl.org/docs.html" target="_blank"></m:Link>
+              <m:Link id="linkToXummDoc" text="{i18n>link-to-xumm-dev}" href="https://xumm.readme.io" target="_blank"></m:Link>
+            </blocks>
+          </ObjectPageSubSection>
+        </subSections>
+      </ObjectPageSection>
+    </sections>
+  </ObjectPageLayout>
+</mvc:View>

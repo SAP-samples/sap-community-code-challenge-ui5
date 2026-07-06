@@ -1,0 +1,15 @@
+<core:FragmentDefinition xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+    <Dialog id="myDialog" title="{i18n>fee-information}">
+        <buttons>
+            <Button id="closeFeeDialog" text="{i18n>close}" icon="" press=".onCloseFeeDialog"></Button>
+        </buttons>
+        <content>
+            <VBox >
+                <Text text="{i18n>minimum-fee}: { path:'xrpl>/LedgerFees/BaseFee',formatter:'.formatBaseFee'} {i18n>XRP}" />
+                <Text text="{i18n>tl-reserve-fee}: { path:'xrpl>/LedgerFees/ReserveIncrement',formatter:'.formatXrplDrops'} {i18n>XRP}" />
+                <Text text="{i18n>wallet-reserve-fee}: { path:'xrpl>/LedgerFees/ReserveBase',formatter:'.formatXrplDrops'} {i18n>XRP}" />
+            </VBox>
+        </content>
+    </Dialog>
+</core:FragmentDefinition>

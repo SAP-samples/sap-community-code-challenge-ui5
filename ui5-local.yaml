@@ -1,0 +1,34 @@
+specVersion: "2.4"
+metadata:
+  name: ui5.challenge
+type: application
+framework:
+  name: SAPUI5
+  version: 1.103.0
+  libraries:
+    - name: sap.m
+    - name: sap.ui.core
+    - name: sap.f
+    - name: sap.ui.comp
+    - name: sap.ui.generic.app
+    - name: sap.ui.table
+    - name: sap.ushell
+    - name: themelib_sap_bluecrystal
+    - name: themelib_sap_fiori_3
+server:
+  customMiddleware:
+    - name: fiori-tools-proxy
+      afterMiddleware: compression
+      configuration:
+        ignoreCertError: false
+    - name: fiori-tools-appreload
+      afterMiddleware: compression
+      configuration:
+        port: 35729
+        path: webapp
+        delay: 300
+    - name: fiori-tools-preview
+      afterMiddleware: fiori-tools-appreload
+      configuration:
+        component: ui5.challenge
+        ui5Theme: sap_fiori_3

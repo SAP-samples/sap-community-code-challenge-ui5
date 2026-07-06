@@ -1,4 +1,44 @@
-specVersion: '2.6'
+specVersion: "2.4"
 metadata:
-  name: ui5-challenge
+  name: ui5.challenge
 type: application
+server:
+  customMiddleware:
+    - name: fiori-tools-proxy
+      afterMiddleware: compression
+      configuration:
+        ignoreCertError: false
+        ui5:
+          path:
+            - /resources
+            - /test-resources
+          url: https://ui5.sap.com
+          version: ""
+    - name: fiori-tools-appreload
+      afterMiddleware: compression
+      configuration:
+        port: 35729
+        path: webapp
+        delay: 300
+    - name: fiori-tools-preview
+      afterMiddleware: fiori-tools-appreload
+      configuration:
+        component: ui5.challenge
+        ui5Theme: sap_fiori_3
+--- # 3rd party plugins
+specVersion: "2.6"
+kind: extension
+type: project-shim
+metadata:
+  name: plugins
+shims:
+  configurations:
+    xrpl: # name as defined in package.json
+      specVersion: "2.6"
+      type: module # Use module type
+      metadata:
+        name: xrpl-latest.js
+      resources:
+        configuration:
+          paths:
+            /plugins/xrpl/: ""

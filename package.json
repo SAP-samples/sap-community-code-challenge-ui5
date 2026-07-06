@@ -1,21 +1,29 @@
 {
-  "name": "ui5-challenge",
-  "version": "1.1.0",
+  "name": "ui5.challenge",
+  "version": "0.0.1",
   "description": "SAP Community Code Challenge: This repository contains an empty OpenUI5 application and end-to-end test written with wdi5. Take part in the challenge and develop an app that passes the tests.",
   "scripts": {
-    "start": "ui5 serve --port 8080",
     "test": "wdio run wdio.conf.js",
     "ci-test": "run-p -r start wait-then-test",
-    "wait-then-test": "wait-on tcp:8080 && npm run test -- --headless"
+    "wait-then-test": "wait-on tcp:8080 && npm run test -- --headless",
+    "start": "ui5 serve --port 8080",
+    "start_flp": "fiori run --open \"test/flpSandbox.html?sap-ui-xx-viewCache=false#app-tile\"",
+    "start-local": "fiori run --config ./ui5-local.yaml --open \"test/flpSandboxMockServer.html?sap-ui-xx-viewCache=false#app-tile\"",
+    "start-noflp": "fiori run --open \"index.html?sap-ui-xx-viewCache=false\"",
+    "start-variants-management": "fiori run --open \"preview.html?sap-ui-xx-viewCache=false&fiori-tools-rta-mode=true&sap-ui-rta-skip-flex-validation=true#preview-app\"",
+    "build": "ui5 build -a --clean-dest --include-task=generateManifestBundle generateCachebusterInfo",
+    "deploy": "fiori verify",
+    "deploy-config": "fiori add deploy-config",
+    "start-mock": "fiori run --open \"test/flpSandboxMockServer.html?sap-ui-xx-viewCache=false#app-tile\""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SAP-samples/sap-community-code-challenge-ui5.git"
   },
   "keywords": [
-    "sap",
-    "sap-community",
-    "code-challenge",
+    "ui5",
+    "openui5",
+    "sapui5",
     "OpenUI5",
     "wdi5"
   ],
@@ -26,16 +34,30 @@
   },
   "homepage": "https://github.com/SAP-samples/sap-community-code-challenge-ui5#readme",
   "devDependencies": {
+    "@sap/ux-ui5-tooling": "1",
     "@ui5/cli": "^2.14.1",
+    "@ui5/fs": "^2.0.6",
+    "@ui5/logger": "^2.0.1",
     "@wdio/cli": "^7.19.7",
     "@wdio/local-runner": "^7.19.7",
     "@wdio/mocha-framework": "^7.19.7",
     "@wdio/spec-reporter": "^7.19.7",
     "chromedriver": "^103.0.0",
     "npm-run-all": "^4.1.5",
-    "rimraf": "^3.0.2",
+    "rimraf": "3.0.2",
     "wait-on": "^6.0.1",
     "wdio-chromedriver-service": "^7.3.2",
     "wdio-ui5-service": "^0.9.0"
+  },
+  "private": true,
+  "sapuxLayer": "CUSTOMER_BASE",
+  "main": "webapp/index.html",
+  "ui5": {
+    "dependencies": [
+      "@sap/ux-ui5-tooling"
+    ]
+  },
+  "dependencies": {
+    "xrpl": "^2.3.1"
   }
 }
