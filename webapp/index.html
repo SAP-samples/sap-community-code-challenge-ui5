@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>title</title>
+    <title>ui5-challenge</title>
 
     <script
         id="sap-ui-bootstrap"
@@ -10,11 +10,17 @@
         data-sap-ui-resourceroots='{
             "ui5.challenge": "./"
         }'
-        data-sap-ui-oninit="module:sap/ui/core/ComponentSupport"
         data-sap-ui-compatVersion="edge"
         data-sap-ui-async="true"
         data-sap-ui-frameOptions="trusted"
     ></script>
+    <script>
+        sap.ui.getCore().attachInit(function () {
+            new sap.ui.core.ComponentContainer({
+                name: "ui5.challenge",
+            }).placeAt("content");
+        });
+    </script>
 </head>
 <body class="sapUiBody sapUiSizeCompact" id="content">
     <div

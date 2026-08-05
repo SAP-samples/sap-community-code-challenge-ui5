@@ -8,7 +8,7 @@ sap.ui.define([
             this.getRouter().navTo(psTarget, pmParameters, pbReplace);
         },
         getRouter: function () {
-            return UIComponent.getRouterFor(this);
+            return this.getOwnerComponent().getRouter();
         },
         onPress: function () {
 
