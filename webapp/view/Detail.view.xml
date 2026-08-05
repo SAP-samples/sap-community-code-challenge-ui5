@@ -1,0 +1,6 @@
+<mvc:View
+  controllerName="ui5.challenge.controller.Detail"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m">
+  <Button press="onNavigateToMain" text="Back"></Button>
+</mvc:View> 
